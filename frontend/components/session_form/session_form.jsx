@@ -41,7 +41,7 @@ class SessionForm extends React.Component {
         <form onSubmit={this.handleSubmit} className="login-form-box">
           Join Mountainsurfing for free!
           <br/>
-          Please {this.props.formType} or {this.props.navLink}
+          Please {this.props.formType} or {this.props.otherForm}
           {this.renderErrors()}
           <div className="login-form">
             <br/>

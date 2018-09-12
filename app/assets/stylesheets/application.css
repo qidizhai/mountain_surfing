@@ -15,42 +15,150 @@
  */
  .title {
    font-family: "Roundhand", cursive;
+   margin-left: 0px;
  }
 
- .button {
-    background-color: #4CAF50; /* Green */
+ .login-form-container {
+   display: flex;
+   justify-content: center;
+ }
+
+ .login-form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .login-input {
+    margin-left: 20px;
+   /* margin: 5px;
+  width: 80%;
+  height: 25px;
+  padding-left: 15px;
+  font-size: medium; */
+ }
+
+ .login-form-box {
+   outline: 1px solid black;
+   padding: 20px;
+   background: white;
+   position: relative;
+ }
+
+ .modal-background {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   background: rgba(0, 0, 0, 0.7);
+   z-index: 10;
+ }
+
+ .modal-child {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+
+
+
+ .hero.mod-join {
+   background-image: url(https://ht-assets.couchsurfing.com/assets/homepage/have-fun-with-couchsurfing-0c56538cda235c5806dc956559fe942179937b39d686329158cd1987801ce115.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   text-align: center;
+   height: 400px;
+ }
+
+
+ .hero-content {
+    /* position: absolute; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 20px;
+    width: 100%;
+    margin-bottom: 0;
+    margin: 0 0 0.75em 0;
+    /* height: 400px; */
+    /* background-image: url(background-pic.jpg); */
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+
+  .hero-content-title {
+    /* position: absolute; */
+    color: #fff;
+    font-size: 34px;
+    font-weight: lighter;
+    line-height: 1.1;
+    margin-top: 15px;
+    margin: 100px 0 0.75em 0;
+    /* margin-left: auto;
+    margin-right: auto;
+    width: 50%; */
+    font-family: monospace;
+  }
+
+  .hero-content-subtitle {
+
+    color: #fff;
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 1.1;
+    margin-top: 5px;
+    /* margin-left: 450px;
+    margin-right: auto;
+    width: 50%; */
+    font-family: monospace;
+}
+
+ .header-edit {
+   display: flex;
+   justify-content: space-between;
+   margin: 0 auto;
+   width: 900px;
+ }
+
+ .button-login {
+    background-color: steelblue;
     border: none;
     color: white;
-    width: 60px;
-
+    width: 100px;
+    margin-top: 25px;
     padding: 10px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
     font-family: monospace;
 }
 
- .login-form-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
+.button-signup {
+   background-color: white;
+   color: steelblue;
+   border: 2px solid steelblue;
+   width: 100px;
+   margin-top: 25px;
+   padding: 10px 25px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 12px;
+   font-family: monospace;
+}
+
+
+  .divider{
+    width:15px;
+    height:auto;
+    display:inline-block;
   }
 
-  .login-form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
 
-  .login-input {
-    margin-left: 20px;
-  }
 
-  .login-form-box {
-    outline: 1px solid black;
-    padding: 20px;
-  }
 
   .filter {
     font-weight: bold;
@@ -58,7 +166,7 @@
 
   .header-link {
     text-decoration: none;
-    color: black;
+    color: orange;
   }
 
   .session-submit {
