@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import { openModal, closeModal } from '../../actions/modal_actions';
 
 class SessionForm extends React.Component {
   constructor(props) {
@@ -35,13 +36,20 @@ class SessionForm extends React.Component {
     );
   }
 
+  render_member(formType){
+    if (formType === 'Log In')
+      return (<p>Not a member?</p>)
+    else
+      return (<p>Already a member?</p>)
+  }
+
   render() {
     return (
       <div className="login-form-container">
-        <form onSubmit={this.handleSubmit} className="login-form-box">
-          Join Mountainsurfing for free!
+        <div className="login-form-box">
+        <form onSubmit={this.handleSubmit}>
+          <h3 className="login-title">Welcome to Mountainsurfing</h3>
           <br/>
-          Please {this.props.formType} or {this.props.otherForm}
           {this.renderErrors()}
           <div className="login-form">
             <br/>
@@ -60,9 +68,12 @@ class SessionForm extends React.Component {
             />
             <br/>
             <input className="session-submit" type="submit" value={this.props.formType} />
-          </div>
+            <div className="login-text">{this.render_member(this.props.formType)}</div>
+         </div>
         </form>
+        {this.props.otherForm}
       </div>
+    </div>
     );
   }
 }

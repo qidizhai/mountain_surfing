@@ -11,6 +11,7 @@ import {
 import GreetingContainer from './greeting/greeting_container';
 import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container';
+import Welcome from './welcome/welcome';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import Modal from './modal/modal';
 
@@ -25,19 +26,10 @@ const App = () => (
     </header>
 
     <Switch>
+      <Route exact path="/" component={Welcome} />
       // <AuthRoute exact path="/login" component={LogInFormContainer} />
       // <AuthRoute exact path="/signup" component={SignUpFormContainer} />
     </Switch>
-    <section className="hero mod-join">
-        <div className="hero-content">
-          <h1 className="hero-content-title">
-            Stay with locals and Meet travels
-          </h1>
-          <h2 className="hero-content-subtitle">
-            Share authentic travel experience
-          </h2>
-      </div>
-    </section>
   </div>
 );
 

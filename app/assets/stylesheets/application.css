@@ -18,9 +18,23 @@
    margin-left: 0px;
  }
 
+ .login-title {
+  font-family: monospace;
+  color: steelblue;
+ }
+
+ .login-text {
+   color: #34495e;
+   font-size: 1em;
+ }
+
  .login-form-container {
+   border-radius: 4px;
    display: flex;
    justify-content: center;
+   width: 800px;
+   font-size: 20px;
+   height: 500px;
  }
 
  .login-form {
@@ -30,7 +44,10 @@
  }
 
  .login-input {
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    width: 300px;
+    height: 30px;
+    border-radius: 4px;
    /* margin: 5px;
   width: 80%;
   height: 25px;
@@ -40,9 +57,10 @@
 
  .login-form-box {
    outline: 1px solid black;
-   padding: 20px;
    background: white;
    position: relative;
+   border-radius: 10px;
+   padding: 20px 40px 40px;
  }
 
  .modal-background {
@@ -119,7 +137,7 @@
    display: flex;
    justify-content: space-between;
    margin: 0 auto;
-   width: 900px;
+   max-width: 1250px;
  }
 
  .button-login {
@@ -170,5 +188,34 @@
   }
 
   .session-submit {
+    margin-top: 10px;
     text-transform: capitalize;
+    background-color: #FF5A5F;
+    border: none;
+    color: white;
+    width: 300px;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: monospace;
+    border-radius: 5px;
+  }
+
+  .session-switch {
+    margin-left: 35px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    background-color: rgba(64,217,172,0.85);
+    border: none;
+    color: white;
+    width: 300px;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: monospace;
+    border-radius: 5px;
   }
