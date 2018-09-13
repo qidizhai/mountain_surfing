@@ -150,14 +150,14 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 12px;
+    font-size: 13.5px;
     font-family: monospace;
 }
 
 .button-signup {
    background-color: white;
    color: steelblue;
-   border: 2px solid steelblue;
+   border: 1px solid steelblue;
    width: 100px;
    margin-top: 25px;
    padding: 10px 25px;
@@ -175,7 +175,31 @@
     display:inline-block;
   }
 
+  .header-group {
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .header-name {
+    font-family: monospace;
+    color: steelblue;
+    font-size: 20px;
+    margin-top: 35px;
+  }
+
+  .header-button {
+    background-color: white;
+    color: steelblue;
+    border: 2px solid steelblue;
+    width: 100px;
+    margin-top: 25px;
+    padding: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: monospace;
+  }
 
 
   .filter {
