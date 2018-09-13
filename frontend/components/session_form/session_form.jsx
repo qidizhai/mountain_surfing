@@ -21,7 +21,7 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
-    this.props.processForm(user).then(this.props.closeModal());
+    this.props.processForm(user).then(this.props.closeModal);
   }
 
   renderErrors() {
@@ -69,9 +69,10 @@ class SessionForm extends React.Component {
             <br/>
             <input className="session-submit" type="submit" value={this.props.formType} />
             <div className="login-text">{this.render_member(this.props.formType)}</div>
+            {this.props.otherForm}
          </div>
         </form>
-        {this.props.otherForm}
+
       </div>
     </div>
     );

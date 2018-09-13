@@ -228,8 +228,8 @@
   }
 
   .session-switch {
-    margin-left: 35px;
     margin-top: 10px;
+    margin-bottom: 8px;
     text-transform: capitalize;
     background-color: rgba(64,217,172,0.85);
     border: none;
