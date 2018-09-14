@@ -13,9 +13,11 @@ export const receiveHouse = house => ({
   house
 });
 
-export const fetchHouses = (filters) => dispatch => (
-  APIUtil.fetchHouses(filters).then(houses => dispatch(receiveHouses(houses)))
-);
+export const fetchHouses = (filters) => dispatch => {
+  // debugger
+  return APIUtil.fetchHouses(filters).then(houses => dispatch(receiveHouses(houses)))
+
+};
 
 export const fetchHouse = id => dispatch => (
   APIUtil.fetchHouse(id).then(house => dispatch(receiveHouse(house)))
