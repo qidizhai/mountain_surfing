@@ -11,12 +11,12 @@ import {
 import GreetingContainer from './greeting/greeting_container';
 import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container';
-import Welcome from './welcome/welcome';
+import SearchContainer from './search/search_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import Modal from './modal/modal';
 
 const App = () => (
-  <div>
+  <div className="whole-page">
     <Modal />
     <header className="header-edit">
       <Link to="/" className="header-link">
@@ -26,7 +26,8 @@ const App = () => (
     </header>
 
     <Switch>
-      <Route exact path="/" component={Welcome} />
+
+      <Route exact path="/" component={ SearchContainer } />
       // <AuthRoute exact path="/login" component={LogInFormContainer} />
       // <AuthRoute exact path="/signup" component={SignUpFormContainer} />
     </Switch>
