@@ -9,7 +9,7 @@ class MarkerManager {
     houses.forEach(house => housesObj[house.id] = house);
 
     houses.filter(house=> !this.markers[house.id]).forEach(newHouse => this.createMarkerFromHouse(newHouse));
-
+    Object.keys(this.markers).filter(houseId => !housesObj[houseId]).forEach(houseId => this.removeMarker(this.markers[houseId]));
   }
 
   createMarkerFromHouse(house){
@@ -21,6 +21,11 @@ class MarkerManager {
     });
     this.markers[marker.houseId] = marker;
     //marker.setMap(this.map);
+  }
+
+  removeMarker(marker) {
+    this.markers[marker.houseId].setMap(null);
+    delete this.markers[marker.houseId];
   }
   //...
 }
