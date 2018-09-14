@@ -4786,3 +4786,157 @@ Processing by Api::HousesController#index as JSON
 Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 1.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-09-13 20:41:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Tw5gR34W6PTlJWUaSqq9oQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendered api/users/_user.json.jbuilder (2.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 998ms (Views: 975.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/houses" for 127.0.0.1 at 2018-09-13 20:41:31 -0400
+Processing by Api::HousesController#index as JSON
+  Rendering api/houses/index.json.jbuilder
+  [1m[36mHouse Load (1.1ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/views/api/houses/index.json.jbuilder:1
+  Rendered api/houses/_house.json.jbuilder (0.7ms)
+  Rendered api/houses/_house.json.jbuilder (0.2ms)
+  Rendered api/houses/_house.json.jbuilder (0.2ms)
+  Rendered api/houses/index.json.jbuilder (12.1ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-13 21:02:51 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Tw5gR34W6PTlJWUaSqq9oQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendered api/users/_user.json.jbuilder (2.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 818ms (Views: 798.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/api/houses" for 127.0.0.1 at 2018-09-13 21:02:53 -0400
+Processing by Api::HousesController#index as JSON
+  Rendering api/houses/index.json.jbuilder
+  [1m[36mHouse Load (1.0ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/views/api/houses/index.json.jbuilder:1
+  Rendered api/houses/_house.json.jbuilder (1.0ms)
+  Rendered api/houses/_house.json.jbuilder (0.2ms)
+  Rendered api/houses/_house.json.jbuilder (0.2ms)
+  Rendered api/houses/index.json.jbuilder (13.2ms)
+Completed 200 OK in 26ms (Views: 23.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-13 21:03:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Tw5gR34W6PTlJWUaSqq9oQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendered api/users/_user.json.jbuilder (0.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 154ms (Views: 143.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/houses" for 127.0.0.1 at 2018-09-13 21:03:32 -0400
+Processing by Api::HousesController#index as JSON
+  Rendering api/houses/index.json.jbuilder
+  [1m[36mHouse Load (0.7ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/views/api/houses/index.json.jbuilder:1
+  Rendered api/houses/_house.json.jbuilder (1.2ms)
+  Rendered api/houses/_house.json.jbuilder (0.3ms)
+  Rendered api/houses/_house.json.jbuilder (1.6ms)
+  Rendered api/houses/index.json.jbuilder (11.3ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-13 21:03:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Tw5gR34W6PTlJWUaSqq9oQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 39ms (Views: 35.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/houses" for 127.0.0.1 at 2018-09-13 21:03:36 -0400
+Processing by Api::HousesController#index as JSON
+  Rendering api/houses/index.json.jbuilder
+  [1m[36mHouse Load (0.7ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/views/api/houses/index.json.jbuilder:1
+  Rendered api/houses/_house.json.jbuilder (0.7ms)
+  Rendered api/houses/_house.json.jbuilder (0.2ms)
+  Rendered api/houses/_house.json.jbuilder (0.2ms)
+  Rendered api/houses/index.json.jbuilder (9.6ms)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-13 21:03:47 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Tw5gR34W6PTlJWUaSqq9oQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 603ms (Views: 599.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/houses" for 127.0.0.1 at 2018-09-13 21:03:48 -0400
+Processing by Api::HousesController#index as JSON
+  Rendering api/houses/index.json.jbuilder
+  [1m[36mHouse Load (0.8ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/views/api/houses/index.json.jbuilder:1
+  Rendered api/houses/_house.json.jbuilder (0.7ms)
+  Rendered api/houses/_house.json.jbuilder (0.2ms)
+  Rendered api/houses/_house.json.jbuilder (0.2ms)
+  Rendered api/houses/index.json.jbuilder (8.8ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-13 21:04:06 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Tw5gR34W6PTlJWUaSqq9oQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 106ms (Views: 92.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/houses" for 127.0.0.1 at 2018-09-13 21:04:06 -0400
+Processing by Api::HousesController#index as JSON
+  Rendering api/houses/index.json.jbuilder
+  [1m[36mHouse Load (0.7ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/views/api/houses/index.json.jbuilder:1
+  Rendered api/houses/_house.json.jbuilder (0.8ms)
+  Rendered api/houses/_house.json.jbuilder (0.2ms)
+  Rendered api/houses/_house.json.jbuilder (0.2ms)
+  Rendered api/houses/index.json.jbuilder (9.5ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-13 21:04:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Tw5gR34W6PTlJWUaSqq9oQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 216ms (Views: 214.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/houses" for 127.0.0.1 at 2018-09-13 21:04:23 -0400
+Processing by Api::HousesController#index as JSON
+  Rendering api/houses/index.json.jbuilder
+  [1m[36mHouse Load (0.5ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  ↳ app/views/api/houses/index.json.jbuilder:1
+  Rendered api/houses/_house.json.jbuilder (0.5ms)
+  Rendered api/houses/_house.json.jbuilder (0.1ms)
+  Rendered api/houses/_house.json.jbuilder (0.2ms)
+  Rendered api/houses/index.json.jbuilder (6.3ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.5ms)
+
+
