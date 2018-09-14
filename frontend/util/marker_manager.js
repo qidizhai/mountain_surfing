@@ -20,6 +20,7 @@ class MarkerManager {
       houseId: house.id
     });
     this.markers[marker.houseId] = marker;
+    //marker.setMap(this.map);
   }
   //...
 }

@@ -13,8 +13,15 @@ class HouseMap extends React.Component {
     // wrap the mapDOMNode in a Google Map
     this.map = new google.maps.Map(this.mapNode, mapOptions);
     this.MarkerManager = new MarkerManager(this.map);
+    //this.registerListeners();
     this.MarkerManager.updateMarkers(this.props.houses);
   }
+
+  // registerListeners() {
+  //   google.maps.event.addEventListener(this.map,'idle', () => {
+  //     const { north, south, east, west } = this.map.getBounds().toJSON();
+  //   });
+  // }
 
   componentDidUpdate() {
     this.MarkerManager.updateMarkers(this.props.houses);

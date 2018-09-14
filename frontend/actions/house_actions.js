@@ -13,8 +13,8 @@ export const receiveHouse = house => ({
   house
 });
 
-export const fetchHouses = () => dispatch => (
-  APIUtil.fetchHouses().then(houses => dispatch(receiveHouses(houses)))
+export const fetchHouses = (filters) => dispatch => (
+  APIUtil.fetchHouses(filters).then(houses => dispatch(receiveHouses(houses)))
 );
 
 export const fetchHouse = id => dispatch => (
