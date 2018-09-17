@@ -6,8 +6,8 @@ class HouseIndex extends React.Component {
 
   render(){
     return (
-      <div>
-        <ul>{
+      <div className="houses">
+        <ul className="all-houses">{
             this.props.houses.map(house => (
               <HouseIndexItem key={house.id}
                 house = {house}/>

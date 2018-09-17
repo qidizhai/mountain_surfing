@@ -91,7 +91,12 @@ class HomePage extends React.Component {
           </div>
         </div>
       </section>
-      
+      <section className="plan-trips">
+        <div className="trip-content">
+          <h2 className="trip-title">Ready for your next adventures?</h2>
+          <Link className="button-trip" to="/index">Plan a trip</Link>
+        </div>
+      </section>
     </div>
     );
   }

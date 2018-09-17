@@ -15,7 +15,7 @@
  */
 
  .hero.mod-join {
-   /* margin-top: 25px; */
+   margin-top: 25px;
    background-image: url(https://ht-assets.couchsurfing.com/assets/homepage/have-fun-with-couchsurfing-0c56538cda235c5806dc956559fe942179937b39d686329158cd1987801ce115.jpg);
    background-position: center center;
    background-repeat: no-repeat;
@@ -53,6 +53,16 @@
     margin-right: auto;
     width: 50%; */
     font-family: monospace;
+}
+
+footer {
+  background-color: #fff;
+  border-top: 1px solid rgba(0,0,0,0.15);
+  font-size: 12px;
+  font-weight: 700px;
+  color: #bfcad2;
+  padding: 2.2rem 0 1.5rem;
+  display: flex;
 }
 
 

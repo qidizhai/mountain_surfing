@@ -11,14 +11,57 @@
   background-color: #F1EFEA;
 }
 
-/* .plan-trips {
-  /* flex-direction: row; */
-  /* background-image: url("https://ht-assets.couchsurfing.com/assets/homepage/adventure-42548276301ede5dedb182f264201a15bc55acd1898c4d084a133211e18233a0.jpg");
+ .plan-trips {
+  flex-direction: row;
+  background-image: url(https://ht-assets.couchsurfing.com/assets/homepage/adventure-42548276301ede5dedb182f264201a15bc55acd1898c4d084a133211e18233a0.jpg);
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
   align-items: center;
-} */ 
+  min-height: 500px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.trip-content {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 20px;
+  width: 100%;
+  display: block;
+  text-align: center;
+
+}
+
+.button-trip {
+  background-color: #ED6504;
+  min-width: 180px;
+  border: 1px solid;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  max-width: 240px;
+  padding: 8px 12px;
+  text-align: center;
+  color: white;
+  border-color: #ED6504;
+  font-family:  Lato, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.trip-title {
+  color: #fff;
+  font-size: 34px;
+  font-weight: normal;
+  margin-bottom: 0.5em;
+  margin: 0 0 0.75em 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  -webkit-margin-before: 0.83em;
+  -webkit-margin-after: 0.83em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
 
 .hero-content-cities {
   max-width: 1280px;

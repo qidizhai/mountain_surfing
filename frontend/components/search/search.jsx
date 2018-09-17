@@ -28,8 +28,10 @@ class Search extends React.Component {
     return (
       <div>
         <input id="pac-input" type="text" placeholder="Search Cities" />
-        <HouseMap houses={this.props.houses} updateFilter={this.props.updateFilter} />
-        <HouseIndex houses={this.props.houses}/>
+        <div className="main-index">
+          <HouseMap houses={this.props.houses} updateFilter={this.props.updateFilter} />
+          <HouseIndex houses={this.props.houses}/>
+        </div>
       </div>
     );
   }
