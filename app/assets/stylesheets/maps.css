@@ -1,0 +1,20 @@
+
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 10px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 250px;
+  border: solid black 1px;
+  height: 30px;
+  margin-top: 25px;
+  border-radius: 2px;
+}
+
+#map-container {
+  width: 500px;
+  height: 500px;
+}

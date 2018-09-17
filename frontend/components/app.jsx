@@ -13,6 +13,7 @@ import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container';
 import SearchContainer from './search/search_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
+import HomePage from './homepage/home_page';
 import Modal from './modal/modal';
 
 const App = () => (
@@ -22,12 +23,14 @@ const App = () => (
       <Link to="/" className="header-link">
         <h1 className="title">Mountainsurfing</h1>
       </Link>
+      
       <GreetingContainer />
     </header>
 
     <Switch>
+      <Route exact path="/" component={ HomePage } />
 
-      <Route exact path="/" component={ SearchContainer } />
+      <Route exact path="/index" component={ SearchContainer } />
       // <AuthRoute exact path="/login" component={LogInFormContainer} />
       // <AuthRoute exact path="/signup" component={SignUpFormContainer} />
     </Switch>
