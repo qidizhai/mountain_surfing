@@ -1,7 +1,8 @@
 class MarkerManager {
-  constructor(map) {
+  constructor(map, handleClick) {
     this.map = map;
     this.markers = {};
+    this.handleClick = handleClick;
   }
 
   updateMarkers(houses) {
@@ -19,6 +20,8 @@ class MarkerManager {
       map: this.map,
       houseId: house.id
     });
+    
+    marker.addListener('click', () => this.handleClick(house));
     this.markers[marker.houseId] = marker;
     //marker.setMap(this.map);
   }

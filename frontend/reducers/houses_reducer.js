@@ -1,4 +1,5 @@
 import { RECEIVE_HOUSES, RECEIVE_HOUSE } from '../actions/house_actions';
+import merge from 'lodash/merge';
 
 const housesReducer = (state = {}, action) => {
   Object.freeze(state);

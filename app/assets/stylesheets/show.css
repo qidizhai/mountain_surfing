@@ -1,0 +1,49 @@
+.single-house-show {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.single-house-map {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.go-home {
+  background-color: #ED6504;
+  min-width: 180px;
+  border: 1px solid;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  max-width: 240px;
+  padding: 8px 12px;
+  height:25px;
+  text-align: center;
+  color: white;
+  border-color: #ED6504;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.right-half {
+  width: 400px;
+   margin-left: 50px;
+   margin-top: 20px;
+   height: 480px;
+   overflow-y: scroll;
+   padding: 0 20px 20px 20px;
+   display: flex;
+   flex-direction: column;
+}
+
+.house-list {
+   padding-left: 0;
+   list-style-position: inside;
+   margin-top: 0;
+ }
+
+ .index-image {
+   max-height: 200px;
+   max-width: 100px;
+ }
