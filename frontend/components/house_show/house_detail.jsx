@@ -1,7 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-const HouseDetail = ({ house }) => {
+import ReviewShow from './review_show';
+
+const reviewList = (reviews = []) => {
+
+  return (
+  reviews.map(review => (
+    <ReviewShow
+      review={review}
+      key={review.id}
+    />
+  ))
+)};
+
+const HouseDetail = ({ house, reviews }) => {
   return (
     <div>
       <ul className="house-list">
@@ -10,7 +23,11 @@ const HouseDetail = ({ house }) => {
         <li>Latitude: {house.lat}</li>
         <li>Longtitude: {house.lng}</li>
       </ul>
-
+      <br/>
+      <div className="reviews">
+        <h3>reviews</h3>
+        {reviewList(reviews)}
+      </div>
     </div>
 
   );

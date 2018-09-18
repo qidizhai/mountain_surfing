@@ -2,7 +2,8 @@ class Api::HousesController < ApplicationController
   before_action :require_logged_in, only: [:create]
 
   def index
-    @houses = bounds ? House.in_bounds(bounds) : House.all
+    houses = bounds ? House.in_bounds(bounds) : House.all
+    @houses = houses.includes(:reviews)
     render :index
   end
 

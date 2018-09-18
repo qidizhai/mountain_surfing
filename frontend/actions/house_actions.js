@@ -2,25 +2,34 @@ import * as APIUtil from '../util/house_api_util';
 
 export const RECEIVE_HOUSES = "RECEIVE_HOUSES";
 export const RECEIVE_HOUSE = "RECEIVE_HOUSE";
+export const RECEIVE_REVIEW = 'RECEIVE_REVIEW';
 
 export const receiveHouses = houses => ({
   type: RECEIVE_HOUSES,
   houses
 });
 
-export const receiveHouse = house => ({
+export const receiveHouse = data => ({
   type: RECEIVE_HOUSE,
-  house
+  data
 });
+
+export const receiveReview = review => ({
+  type: RECEIVE_REVIEW,
+  review
+})
+
+export const createReview = review => dispatch => (
+  APIUtil.createReview(review).then(review => dispatch(receiveReview(review)))
+);
 
 export const fetchHouses = (filters) => dispatch => {
   // debugger
   return APIUtil.fetchHouses(filters).then(houses => dispatch(receiveHouses(houses)))
-
 };
 
 export const fetchHouse = id => dispatch => (
-  APIUtil.fetchHouse(id).then(house => dispatch(receiveHouse(house)))
+  APIUtil.fetchHouse(id).then(data => dispatch(receiveHouse(data)))
 );
 
 export const createHouse = house => dispatch => (

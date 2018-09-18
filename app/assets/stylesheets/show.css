@@ -47,3 +47,11 @@
    max-height: 200px;
    max-width: 100px;
  }
+
+ .reviews {
+   float: left;
+ }
+
+ .review-form {
+   float: left;
+ }

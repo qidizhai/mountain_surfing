@@ -13,7 +13,7 @@ class HouseMap extends React.Component {
         center: {lat: this.props.house.lat, lng: this.props.house.lng},
         zoom: 14
        };
-       
+
     } else{
         mapOptions = {
         center: { lat: 37.7758, lng: -122.435 }, // this is SF
