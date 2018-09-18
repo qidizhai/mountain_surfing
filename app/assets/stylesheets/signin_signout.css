@@ -1,0 +1,161 @@
+
+.login-title {
+ font-family: monospace;
+ color: steelblue;
+ font-size: 30px;
+}
+
+.login-text {
+  color: #34495e;
+  font-size: 1em;
+}
+
+.login-form-container {
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  font-size: 20px;
+  height: 500px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-input {
+  width: 350px;
+  height: 30px;
+  border: black solid 0.5px;
+  border-radius: 4px;
+}
+
+p {
+  margin-top: 10px;
+}
+
+.login-form-box {
+  outline: 1px solid black;
+  background: white;
+  position: relative;
+  border-radius: 10px;
+  padding: 20px 40px 40px;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.modal-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.button-login {
+   background-color: steelblue;
+   border: none;
+   color: white;
+   width: 100px;
+   margin-top: 25px;
+   padding: 10px 25px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 13.5px;
+   font-family: monospace;
+}
+
+.button-signup {
+  background-color: white;
+  color: steelblue;
+  border: 1px solid steelblue;
+  width: 100px;
+  margin-top: 25px;
+  margin-right: 20px;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-family: monospace;
+}
+
+.header-name {
+  font-family: monospace;
+  color: steelblue;
+  font-size: 20px;
+  margin-top: 35px;
+}
+
+.header-button {
+  background-color: white;
+  color: steelblue;
+  border: 2px solid steelblue;
+  width: 100px;
+  margin-top: 25px;
+  padding: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-family: monospace;
+}
+
+
+.filter {
+  font-weight: bold;
+}
+
+.session-submit {
+  margin-top: 10px;
+  text-transform: capitalize;
+  background-color: #FF5A5F;
+  border: none;
+  color: white;
+  width: 300px;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-family: monospace;
+  border-radius: 5px;
+}
+
+.session-switch {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+  background-color: rgba(64,217,172,0.85);
+  border: none;
+  color: white;
+  width: 300px;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-family: monospace;
+  border-radius: 5px;
+}
+
+.login-signup {
+  margin-left: 400px;
+}
+
+.header-group {
+  display: flex;
+  justify-content: space-between;
+}

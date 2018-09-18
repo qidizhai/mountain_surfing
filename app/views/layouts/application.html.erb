@@ -3,18 +3,16 @@
   <head>
     <title>Mountain Surfing</title>
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyCn4vMSwShCKGMW1HC7qDr2Oza674_8zIw&libraries=places"%>
     <%= stylesheet_link_tag 'application', media: 'all'%>
     <%= csrf_meta_tags %>
     <%= javascript_include_tag 'application' %>
-
 
     <script type="text/javascript">
       window.CLOUDINARY_OPTIONS = {
         cloud_name: "<%= ENV['CLOUD_NAME'] %>",
         upload_preset: "<%= ENV['UPLOAD_PRESET'] %>"
-      },
-      window.backgroundURL = "<%= image_url('background-pic.jpg') %>"
+      }
     </script>
   </head>
   <body>
@@ -22,4 +20,5 @@
     <%= yield %>
 
   </body>
+  <footer>Welcome to Mountainsurfing International, Inc. All copy rights reserved. Please contact us for more information and send us feedbacks</footer>
 </html>

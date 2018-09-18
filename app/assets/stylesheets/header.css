@@ -1,0 +1,24 @@
+.title {
+  font-family: "Roundhand", cursive;
+  margin-left: 10px;
+  font-size: 30px;
+  margin-top: 20px;
+  position: fix;
+}
+
+.header-edit {
+  display: flex;
+  justify-content: space-between;
+  max-width: 2000px;
+}
+
+.exploring-cities {
+  font-size: 14px;
+  color: #929dad;
+  margin-top: 30px;
+}
+
+.header-link {
+  text-decoration: none;
+  color: orange;
+}
