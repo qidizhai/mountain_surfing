@@ -1,15 +1,124 @@
 .single-house-show {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  /* display: flex;
+  justify-content: center; */
+  /* margin-top: 20px; */
+  position: relative;
 }
 
-.single-house-map {
-  display: flex;
-  /* flex-direction: column; */
+.house-image {
+  height: 368px !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: 50% 50%;
 }
 
-.go-home {
+.house-info {
+  margin-top:10px;
+  margin-left: 50px;
+  margin-right:50px;
+}
+
+.house-info:before {
+  content: " " !important;
+  display: table !important;
+}
+
+.all-info {
+  width: 60% !important;
+  float: left !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+
+.title-address-pic {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.house-title-address {
+  width: 83.333% !important;
+  float: left !important;
+  padding-left: 8px;
+  padding-right: 8px;
+  position: relative;
+}
+
+.house-title {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 36px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  color: black;
+}
+
+.location {
+  margin-top: 12px;
+  font-weight: normal;
+  color: #484848;
+  font-size: 14px;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.profile-picture-name {
+  width: 16.67% !important;
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+  position:relative;
+  margin-top: 12px;
+  color: #767676;
+  text-align: center;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.43;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.profile-image {
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  margin-bottom: 6px;
+}
+
+.guest {
+  margin-right: 16px;
+  display: inline-block;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #484848;
+  -webkit-font-smoothing: antialiased;
+}
+
+.guest-div {
+  display: table;
+}
+
+.icon {
+  display: table-cell;
+  vertical-align: top;
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.num-guest {
+  display: table-cell;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+.num-guests {
+  margin-left: 8px;
+}
+
+/* .single-house-map {
+  display: flex;
+} */
+
+/* .go-home {
   background-color: #ED6504;
   min-width: 180px;
   border: 1px solid;
@@ -54,4 +163,4 @@
 
  .review-form {
    float: left;
- }
+ } */

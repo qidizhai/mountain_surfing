@@ -29,23 +29,28 @@ class HouseShow extends React.Component{
        };
       return(
         <div className="single-house-show">
-          <div className="single-house-map">
-            <HouseMap
-              house= {house}
-              houses = {houses}
-              houseId = {houseId}
-              singleHouse = {true}
-              fetchHouse = {fetchHouse}
-            />
-          </div>
-          <div className="right-half">
-            <HouseDetail house={house} reviews={reviews} />
-
-           <Link to={`/houses/${houseId}/review`}>Leave a Review</Link>
-           <ProtectedRoute
-             path="/houses/:houseId/review"
-             component={ReviewFormContainer}
-            />
+          <img className="house-image" src={house.pic_url}/>
+          <div className="house-info">
+            ::before
+            <div className="all-info">
+                <HouseDetail house={house} reviews={reviews} />
+                 <Link to={`/houses/${houseId}/review`}>Leave a Review</Link>
+                 <ProtectedRoute
+                   path="/houses/:houseId/review"
+                   component={ReviewFormContainer}
+                 />
+            </div>
+            <div className="booking"></div>
+              ::after
+            <div className="single-house-map">
+              <HouseMap
+                house= {house}
+                houses = {houses}
+                houseId = {houseId}
+                singleHouse = {true}
+                fetchHouse = {fetchHouse}
+              />
+            </div>
           </div>
         </div>
       );
