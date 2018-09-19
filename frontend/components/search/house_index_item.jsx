@@ -20,7 +20,9 @@ class IndexItem extends React.Component {
     return (
 
       <nav className="house-index-item" onClick={this.handleClick} >
-        <img className="house-image" src={this.props.house.pic_url}/>
+        <div className="house-image-container">
+          <img className="house-image" src={this.props.house.pic_url}/>
+        </div>
         <div className="index-item-info">
           <span className="index-item-category">Description:</span>
           <span className="index-item-copy">{this.props.house.description}</span>

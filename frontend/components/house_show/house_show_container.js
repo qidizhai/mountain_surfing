@@ -5,14 +5,16 @@ import HouseShow from './house_show';
 
 const mapStateToProps = (state, ownProps) => {
   const houseId = parseInt(ownProps.match.params.houseId);
+  const users = state.entities.users;
   const house = selectHouse(state.entities, houseId);
-  const reviews = selectReviewsForHouse(state.entities, house)
+  const reviews = selectReviewsForHouse(state.entities, house);
   return {
+    users,
     houseId,
     house,
     reviews
   };
-}
+};
 
 
 const mapDispatchToProps = dispatch => ({

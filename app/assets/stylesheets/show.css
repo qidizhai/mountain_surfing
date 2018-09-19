@@ -5,14 +5,17 @@
   position: relative;
 }
 
-.house-image {
-  height: 368px !important;
-  background-repeat: no-repeat;
-  background-size: cover !important;
-  background-position: 50% 50%;
+.show-page-container {
+  height: 500px;
+  overflow: hidden;
+}
+
+.house-image1 {
+  height: 100%;
 }
 
 .house-info {
+  display: flex;
   margin-top:10px;
   margin-left: 50px;
   margin-right:50px;
@@ -23,9 +26,9 @@
   display: table !important;
 }
 
-.all-info {
+.all-house-info {
   width: 60% !important;
-  float: left !important;
+  /* float: left !important; */
   padding-left: 10px;
   padding-right: 10px;
   position: relative;
@@ -47,11 +50,13 @@
 }
 
 .house-title {
+
   font-weight: 800;
   font-size: 32px;
   line-height: 36px;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   color: black;
+  -webkit-font-smoothing: antialiased;
 }
 
 .location {
@@ -63,14 +68,14 @@
 }
 
 .profile-picture-name {
-  width: 16.67% !important;
-  float: left;
+  /* width: 16.67% !important; */
+  /* float: left; */
   padding-left: 8px;
   padding-right: 8px;
   position:relative;
   margin-top: 12px;
   color: #767676;
-  text-align: center;
+  /* text-align: center; */
   font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   line-height: 1.43;
@@ -82,6 +87,14 @@
   border-radius: 50%;
   border: 2px solid #ffffff;
   margin-bottom: 6px;
+  height: 80px;
+  width: 80px;
+}
+
+.title-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .guest {
@@ -108,15 +121,158 @@
   display: table-cell;
   vertical-align: top;
   font-size: 16px;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #484848;
+  -webkit-font-smoothing: antialiased;
 }
 
 .num-guests {
   margin-left: 8px;
 }
 
-/* .single-house-map {
+.hightlights {
+  margin-left: -8px;
+  margin-right: -8px;
+  border-top: 0.5px solid lightgrey;
+  border-bottom: 0.5px solid lightgrey;
+  border-left: 0.5px solid lightgrey;
+  border-right: 0.5px solid lightgrey;
+}
+
+.highlight-content {
+  padding: 15px 15px 15px 15px;
+}
+
+.higlights-font {
+  font-size: 17px !important;
+  line-height: 22px !important;
+  letter-spacing: normal !important;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.description {
+  margin-left: -8px;
+  margin-right: -8px;
+  font-size: 16px;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #484848;
+  -webkit-font-smoothing: antialiased;
+}
+
+.add-border {
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0.5px solid lightgrey;
+}
+
+.amenities {
+  margin-left: -8px;
+  margin-right: -8px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #484848;
+  -webkit-font-smoothing: antialiased;
+}
+
+.amenities-holder {
   display: flex;
-} */
+  align-items: center;
+}
+
+.left-ame {
+  margin-top: 15px;
+  width: 50%;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.right-ame {
+  margin-top: 15px;
+  width: 50%;
+}
+
+.arrangements {
+  display: flex;
+  margin-left: -8px;
+  margin-right: -8px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #484848;
+  -webkit-font-smoothing: antialiased;
+}
+
+.arrangements-content-left {
+  width: 40%;
+  border-top: 0.5px solid lightgrey;
+  border-bottom: 0.5px solid lightgrey;
+  border-left: 0.5px solid lightgrey;
+  border-right: 0.5px solid lightgrey;
+}
+
+.arrangements-content-right {
+  width: 40%;
+  margin-left: 15px;
+  border-top: 0.5px solid lightgrey;
+  border-bottom: 0.5px solid lightgrey;
+  border-left: 0.5px solid lightgrey;
+  border-right: 0.5px solid lightgrey;
+}
+
+.padding {
+  padding: 20px 20px 20px 20px;
+}
+
+.arrangements-font {
+  font-weight: 500;
+  font-size: 15px !important;
+  line-height: 22px !important;
+  letter-spacing: normal !important;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 0px;
+}
+
+.bold-arrangements {
+  font-weight: 600;
+}
+
+
+
+
+
+.map-book {
+  width: 40% !important;
+  padding-left: 100px;
+  padding-right: 100px;
+  position: relative;
+}
+
+.map-title {
+  margin-top: 165px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #484848;
+  -webkit-font-smoothing: antialiased;
+}
+
+.single-house-map {
+  margin-top: 10px;
+  display: flex;
+  height: 20%;
+  width: 100%;
+}
+
+
 
 /* .go-home {
   background-color: #ED6504;

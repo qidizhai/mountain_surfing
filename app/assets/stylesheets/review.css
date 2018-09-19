@@ -1,0 +1,111 @@
+.review-title {
+  width: 70%;
+  margin-left: -8px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #484848;
+  -webkit-font-smoothing: antialiased;
+}
+
+.username {
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 50%;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #484848;
+  -webkit-font-smoothing: antialiased;
+}
+
+.name-fires {
+  display: flex;
+}
+
+.rating {
+  width: 50%;
+}
+
+.review-holder {
+  display: flex;
+  align-items: center;
+}
+
+.comments {
+  margin-top: 20px;
+  margin-left: -8px;
+  margin-right: -8px;
+  font-size: 16px;
+  font-weight: 450;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #484848;
+  -webkit-font-smoothing: antialiased;
+}
+
+.create-review {
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: 600;
+  border-width: 1px;
+  border-style: solid;
+  padding-left: 16px;
+  padding-right: 16px;
+  background: transparent;
+  border-color: #008489;
+  color: #008489;
+  border-radius: 4px;
+}
+
+.review-form {
+  margin-left: -8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0.5px solid lightgrey;
+}
+
+.review-form-content {
+  padding: 20px 20px 20px 20px;
+}
+
+.rating-title {
+  font-size: 16px;
+  font-weight: 450;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #484848;
+  -webkit-font-smoothing: antialiased;
+}
+
+textarea {
+  margin-top: 12px;
+  border: 0.3px solid lightgrey;
+  width: 80%;
+}
+
+.rating-container {
+  margin-left: 20px;
+  width: 25%;
+  border: 0.3px solid lightgrey;
+}
+
+.submit-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submit-review {
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: 600;
+  border-width: 1px;
+  border-style: solid;
+  padding-left: 16px;
+  padding-right: 16px;
+  background: transparent;
+  border-color: #008489;
+  color: #008489;
+  border-radius: 4px;
+}
