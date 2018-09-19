@@ -22,6 +22,7 @@ const HouseDetail = ({ house, reviews }) => {
         <li>Description: {house.description}</li>
         <li>Latitude: {house.lat}</li>
         <li>Longtitude: {house.lng}</li>
+        <img className="index-image" src={house.host_url}/>
       </ul>
       <br/>
       <div className="reviews">

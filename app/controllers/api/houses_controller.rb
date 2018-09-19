@@ -19,7 +19,8 @@ class Api::HousesController < ApplicationController
   private
 
   def house_params
-    params.require(:house).permit(:lat, :lng, :description, :pic_url)
+    params.require(:house).permit(:lat, :lng, :description,
+      :pic_url, :host_name, :host_url, :title, :price)
   end
 
   def bounds

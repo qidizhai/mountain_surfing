@@ -9,6 +9,7 @@ class HouseMap extends React.Component {
   componentDidMount() {
     let mapOptions;
     if (this.props.singleHouse){
+        
         mapOptions = {
         center: {lat: this.props.house.lat, lng: this.props.house.lng},
         zoom: 14

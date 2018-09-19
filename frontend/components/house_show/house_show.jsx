@@ -10,16 +10,19 @@ import { ProtectedRoute } from '../../util/route_util';
 class HouseShow extends React.Component{
 
   componentDidMount(){
+
     this.props.fetchHouse(this.props.match.params.houseId);
   }
 
   componentWillReceiveProps(nextProps){
+
     if (this.props.houseId !== parseInt(nextProps.match.params.houseId))
       this.props.fetchHouse(nextProps.match.params.houseId);
   }
 
    render(){
-      if (!this.props.house) return null;
+
+      if (!this.props.house.id) return null;
       const { house, houseId, fetchHouse, reviews } = this.props;
       const houses = {
         [houseId]: house
