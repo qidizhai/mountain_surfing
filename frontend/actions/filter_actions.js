@@ -12,5 +12,5 @@ export const updateFilter = (filter, value) => {
   return (dispatch, getState) => {
     dispatch(changeFilter(filter, value));
     return fetchHouses(getState().ui.filters)(dispatch);
-  }
+  };
 };

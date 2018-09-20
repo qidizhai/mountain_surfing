@@ -6,9 +6,18 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 House.delete_all
+<<<<<<< HEAD
 User.delete_all
 ApplicationRecord.connection.reset_pk_sequence!('houses')
 ApplicationRecord.connection.reset_pk_sequence!('users')
+=======
+Review.delete_all
+User.delete_all
+ApplicationRecord.connection.reset_pk_sequence!('houses')
+ApplicationRecord.connection.reset_pk_sequence!('users')
+ApplicationRecord.connection.reset_pk_sequence!('reviews')
+
+>>>>>>> 78c1d8d6ae537da7e1afaec0d836847469237753
 
 User.create!(
   username: "Blake Z",
@@ -129,7 +138,8 @@ House.create!(
   title: 'Yosemite gateway chalet',
   lat: 37.7636023,
   lng: -119.1085565,
-  pic_url: 'http://yosemitegatewaychalet.com/wp-content/uploads/2014/04/yosemite_gateway_chalet_june_mammoth_lake_rental_vacation_home_slide_1.jpg'
+  pic_url: 'http://yosemitegatewaychalet.com/wp-content/uploads/2014/04/yosemite_gateway_chalet_june_mammoth_lake_rental_vacation_home_slide_1.jpg',
+  address: "Yosemite, CA"
 )
 
 House.create!(
@@ -140,7 +150,8 @@ House.create!(
   title: 'Four seasons',
   lat: 37.7631382,
   lng: -119.1075204,
-  pic_url: 'https://yosemitepinesrv.com/images/lodging/premium-loft-4.jpg'
+  pic_url: 'https://yosemitepinesrv.com/images/lodging/premium-loft-4.jpg',
+  address: "Yosemite, CA"
 )
 
 House.create!(
@@ -151,7 +162,8 @@ House.create!(
   title: 'Yosemite Forest Lodge',
   lat: 37.6423375,
   lng: -119.0034716,
-  pic_url: 'https://www.visitcalifornia.com/sites/default/files/styles/welcome_image/public/VCW_D_Yosemite_T5_HS_Yosemite_Awahnee_horz_KG_1280x642.jpg'
+  pic_url: 'https://www.visitcalifornia.com/sites/default/files/styles/welcome_image/public/VCW_D_Yosemite_T5_HS_Yosemite_Awahnee_horz_KG_1280x642.jpg',
+  address: "Yosemite, CA"
 )
 
 House.create!(
@@ -162,7 +174,8 @@ House.create!(
   title: 'Little Ahwahnee Inn',
   lat: 37.4775974,
   lng: -119.6387045,
-  pic_url: 'https://a0.muscache.com/im/pictures/ff01b006-f6ad-4ebb-b384-6643af1ed174.jpg?aki_policy=xx_large'
+  pic_url: 'https://a0.muscache.com/im/pictures/ff01b006-f6ad-4ebb-b384-6643af1ed174.jpg?aki_policy=xx_large',
+  address: "Yosemite, CA"
 )
 
 # Yosemite done!
@@ -175,7 +188,8 @@ House.create!(
   title: 'Yellowstone Club',
   lat: 44.7338412,
   lng: -110.4986803,
-  pic_url: 'http://yellowstoneclub.com/wp-content/uploads/ewpt_cache/370x250_100_1_c_FFFFFF_7dbda9be9cafaf91332cfdcb100ebccb_15.jpg'
+  pic_url: 'http://yellowstoneclub.com/wp-content/uploads/ewpt_cache/370x250_100_1_c_FFFFFF_7dbda9be9cafaf91332cfdcb100ebccb_15.jpg',
+  address: "Yellowstone, WY"
 )
 
 House.create!(
@@ -186,7 +200,8 @@ House.create!(
   title: 'Centre Sky',
   lat: 44.7249994,
   lng: -110.7122699,
-  pic_url: 'http://centresky.com/wp-content/uploads/2016/10/2.jpg'
+  pic_url: 'http://centresky.com/wp-content/uploads/2016/10/2.jpg',
+  address: "Yellowstone, WY"
 )
 
 House.create!(
@@ -197,7 +212,8 @@ House.create!(
   title: 'Rainbow Lodge Remodel',
   lat: 44.4182434,
   lng: -110.5803911,
-  pic_url: 'http://centresky.com/wp-content/uploads/2016/05/21.jpg'
+  pic_url: 'http://centresky.com/wp-content/uploads/2016/05/21.jpg',
+  address: "Yellowstone, WY"
 )
 
 House.create!(
@@ -208,7 +224,8 @@ House.create!(
   title: 'Brokoks Lake Lodge',
   lat: 44.5015582,
   lng: -110.0193159,
-  pic_url: 'http://www.brookslake.com/wp-content/uploads/2016/11/brooks-lake-lodge-lobby.jpg'
+  pic_url: 'http://www.brookslake.com/wp-content/uploads/2016/11/brooks-lake-lodge-lobby.jpg',
+  address: "Yellowstone, WY"
 )
 
 # Yellowstone
@@ -221,7 +238,8 @@ House.create!(
   title: 'Odis Club',
   lat: 35.6908104,
   lng: -83.5355896,
-  pic_url: 'https://odis.homeaway.com/odis/listing/9421132c-34b1-4ebc-a98a-c0e34394534c.c10.jpg'
+  pic_url: 'https://odis.homeaway.com/odis/listing/9421132c-34b1-4ebc-a98a-c0e34394534c.c10.jpg',
+  address: "Great smoky mountin, NC"
 )
 
 House.create!(
@@ -232,7 +250,8 @@ House.create!(
   title: 'Great smoky cabin',
   lat: 35.7038799,
   lng: -83.5319418,
-  pic_url: 'https://www.czmcam.org/wp-content/uploads/2017/02/Luxury-mountain-homes-colorado-exterior-rustic-with-stone-wall-mountain-house-stone-exterior-2.jpg'
+  pic_url: 'https://www.czmcam.org/wp-content/uploads/2017/02/Luxury-mountain-homes-colorado-exterior-rustic-with-stone-wall-mountain-house-stone-exterior-2.jpg',
+  address: "Great smoky mountin, NC"
 )
 
 House.create!(
@@ -243,7 +262,8 @@ House.create!(
   title: 'Edoctorradio cabin',
   lat: 35.5194197,
   lng: -83.3222574,
-  pic_url: 'http://www.edoctorradio.com/wp-content/uploads/2017/05/Luxury-Mountain-Home-Plans1-768x576.jpg'
+  pic_url: 'http://www.edoctorradio.com/wp-content/uploads/2017/05/Luxury-Mountain-Home-Plans1-768x576.jpg',
+  address: "Great smoky mountin, NC"
 )
 
 House.create!(
@@ -254,7 +274,8 @@ House.create!(
   title: 'Inspirational cabin',
   lat: 35.5200135,
   lng: -83.2957787,
-  pic_url: 'http://frit-fond.com/wp-content/uploads/2018/08/beautiful-18-inspirational-mountain-cabin-home-plans-home-plans-home-plans-mountain-home-house-plans-of-mountain-home-house-plans.jpg'
+  pic_url: 'http://frit-fond.com/wp-content/uploads/2018/08/beautiful-18-inspirational-mountain-cabin-home-plans-home-plans-home-plans-mountain-home-house-plans-of-mountain-home-house-plans.jpg',
+  address: "Great smoky mountin, NC"
 )
 # great smoky
 
@@ -266,7 +287,8 @@ House.create!(
   title: 'Patagonia love',
   lat: -51.0186614,
   lng: -73.1306596,
-  pic_url: 'http://www.southwindadventures.com/wp-content/uploads/2016/03/explora-Patagonia-in-winter-snowy-mountains-Patagonia-Chile-mgv27ip9r3dyd5xlbgq7koco9dqkhd93f1mcwh7rt4.jpg'
+  pic_url: 'http://www.southwindadventures.com/wp-content/uploads/2016/03/explora-Patagonia-in-winter-snowy-mountains-Patagonia-Chile-mgv27ip9r3dyd5xlbgq7koco9dqkhd93f1mcwh7rt4.jpg',
+  address: "Torres del Pain, Chile"
 )
 
 House.create!(
@@ -277,7 +299,8 @@ House.create!(
   title: 'Zicasso',
   lat: -51.062699,
   lng: -73.1426759,
-  pic_url: 'https://www.zicasso.com/sites/default/files/styles/original_scaled_down/public/photos/tour/lake_pehoe_torres_del_paine_national_park_patagonia_chile.jpg'
+  pic_url: 'https://www.zicasso.com/sites/default/files/styles/original_scaled_down/public/photos/tour/lake_pehoe_torres_del_paine_national_park_patagonia_chile.jpg',
+  address: "Torres del Pain, Chile"
 )
 
 House.create!(
@@ -288,7 +311,8 @@ House.create!(
   title: 'Torres cabin',
   lat: -51.0555781,
   lng: -72.9998537,
-  pic_url: 'https://www.jetsetter.com/uploads/sites/7/2018/04/h-PooSFA-1380x690.jpeg'
+  pic_url: 'https://www.jetsetter.com/uploads/sites/7/2018/04/h-PooSFA-1380x690.jpeg',
+  address: "Torres del Pain, Chile"
 )
 
 House.create!(
@@ -299,7 +323,8 @@ House.create!(
   title: 'San Matin cabin',
   lat: -50.970042,
   lng: -72.9462953,
-  pic_url: 'https://images.gabrielstechnology.com/reno/imagereader.aspx?imageurl=http%3A%2F%2FRealestateAdminImages.gabriels.net%2F170%2F78116%2F170-2016052417151403-115.jpg&option=N&w=640&permitphotoenlargement=false'
+  pic_url: 'https://images.gabrielstechnology.com/reno/imagereader.aspx?imageurl=http%3A%2F%2FRealestateAdminImages.gabriels.net%2F170%2F78116%2F170-2016052417151403-115.jpg&option=N&w=640&permitphotoenlargement=false',
+  address: "Torres del Pain, Chile"
 )
 
 # Torres del Paine
@@ -312,7 +337,8 @@ House.create!(
   title: 'Teton village',
   lat: 43.687295,
   lng: -110.7695799,
-  pic_url: 'https://pictures.escapia.com/CLCRGR/3999030664.jpg'
+  pic_url: 'https://pictures.escapia.com/CLCRGR/3999030664.jpg',
+  address: "Grand Teton, WY"
 )
 
 House.create!(
@@ -323,7 +349,8 @@ House.create!(
   title: 'Jackson cabin',
   lat: 43.6142611,
   lng: -110.810092,
-  pic_url: 'https://pictures.escapia.com/CLCRGR/6915270461.jpg'
+  pic_url: 'https://pictures.escapia.com/CLCRGR/6915270461.jpg',
+  address: "Grand Teton, WY"
 )
 
 House.create!(
@@ -334,7 +361,8 @@ House.create!(
   title: 'Ranch View village',
   lat: 43.6579927,
   lng: -110.7616835,
-  pic_url: 'https://pictures.escapia.com/CLCRGR/6346010567.jpg'
+  pic_url: 'https://pictures.escapia.com/CLCRGR/6346010567.jpg',
+  address: "Grand Teton, WY"
 )
 
 House.create!(
@@ -345,7 +373,8 @@ House.create!(
   title: 'Teton villa',
   lat: 43.8085731,
   lng: -110.735591,
-  pic_url: 'https://robbreportedit.files.wordpress.com/2016/08/aspensong_exterior_021.jpg?w=1024'
+  pic_url: 'https://robbreportedit.files.wordpress.com/2016/08/aspensong_exterior_021.jpg?w=1024',
+  address: "Grand Teton, WY"
 )
 
 # Grand Teton
@@ -358,7 +387,8 @@ House.create!(
   title: 'Everest heart',
   lat: 27.9478098,
   lng: 86.7416836,
-  pic_url: 'http://snowcattravel.com/communities/5/004/013/299/685//images/4631934035.jpg'
+  pic_url: 'http://snowcattravel.com/communities/5/004/013/299/685//images/4631934035.jpg',
+  address: "Nepel"
 )
 
 House.create!(
@@ -369,7 +399,8 @@ House.create!(
   title: 'Everest view villa',
   lat: 27.918084,
   lng: 86.6575695,
-  pic_url: 'https://www.lifehimalayatrekking.com/pagegallery/everest-in-luxury-trek67.jpg'
+  pic_url: 'https://www.lifehimalayatrekking.com/pagegallery/everest-in-luxury-trek67.jpg',
+  address: "Nepel"
 )
 
 #Nepal
@@ -382,7 +413,8 @@ House.create!(
   title: 'Calvis Wyant',
   lat: 33.6707599,
   lng: -111.8762567,
-  pic_url: 'https://www.calviswyant.com/wp-content/uploads/2014/07/10-041-02-Rear-Ext-EDIT1.jpg'
+  pic_url: 'https://www.calviswyant.com/wp-content/uploads/2014/07/10-041-02-Rear-Ext-EDIT1.jpg',
+  address: "Grand Canyon, AZ"
 )
 
 House.create!(
@@ -393,7 +425,8 @@ House.create!(
   title: 'Canyon view',
   lat: 33.6610804,
   lng: -111.8623521,
-  pic_url: 'https://www.prlog.org/12264559-north-scottsdale-arizona-coldwell-banker-luxury-real-estate-480-323-5365.jpg'
+  pic_url: 'https://www.prlog.org/12264559-north-scottsdale-arizona-coldwell-banker-luxury-real-estate-480-323-5365.jpg',
+  address: "Grand Canyon, AZ"
 )
 
 House.create!(
@@ -404,7 +437,8 @@ House.create!(
   title: 'Foothills lodge',
   lat: 33.631151,
   lng: -111.8288782,
-  pic_url: 'https://www.arizonafoothillsmagazine.com/in-house/wp-content/uploads/001_Dramatic-Architecture.jpg'
+  pic_url: 'https://www.arizonafoothillsmagazine.com/in-house/wp-content/uploads/001_Dramatic-Architecture.jpg',
+  address: "Grand Canyon, AZ"
 )
 
 House.create!(
@@ -415,7 +449,8 @@ House.create!(
   title: 'Boulder Crest villa',
   lat: 33.6538736,
   lng: -111.8699052,
-  pic_url: 'https://www.troonrealestate.com/wp-content/uploads/2010/04/Troon-Mountain-Luxury-Home.jpg'
+  pic_url: 'https://www.troonrealestate.com/wp-content/uploads/2010/04/Troon-Mountain-Luxury-Home.jpg',
+  address: "Grand Canyon, AZ"
 )
 
 # Grand Canyon
@@ -428,7 +463,8 @@ House.create!(
   title: 'Matakauri Lodge',
   lat: -45.0700589,
   lng: 169.5065059,
-  pic_url: 'https://travel.home.sndimg.com/content/dam/images/travel/fullset/2014/08/11/d7/new-zealand-hotels-ss-matakauri-lodge-009.rend.hgtvcom.966.644.suffix/1491585033408.jpeg'
+  pic_url: 'https://travel.home.sndimg.com/content/dam/images/travel/fullset/2014/08/11/d7/new-zealand-hotels-ss-matakauri-lodge-009.rend.hgtvcom.966.644.suffix/1491585033408.jpeg',
+  address: "South island, New Zealand"
 )
 
 House.create!(
@@ -439,7 +475,8 @@ House.create!(
   title: 'Blanket Bay Lodge',
   lat: -45.0406832,
   lng: 169.6941163,
-  pic_url: 'https://www.lodgesofnz.co.nz/assets/Uploads/Blanket-Bay-Lodge-Glenorchy-New-Zealand-LR.jpg'
+  pic_url: 'https://www.lodgesofnz.co.nz/assets/Uploads/Blanket-Bay-Lodge-Glenorchy-New-Zealand-LR.jpg',
+  address: "South island, New Zealand"
 )
 
 House.create!(
@@ -450,7 +487,8 @@ House.create!(
   title: 'Stone Villa',
   lat: -45.2665414,
   lng: 170.3658864,
-  pic_url: 'https://www.lodgesofnz.co.nz/assets/Uploads/_resampled/FillWyIxOTAzIiwiNjQwIl0/Stone-Fly-Lodge-New-Zealand-LR.jpg'
+  pic_url: 'https://www.lodgesofnz.co.nz/assets/Uploads/_resampled/FillWyIxOTAzIiwiNjQwIl0/Stone-Fly-Lodge-New-Zealand-LR.jpg',
+  address: "South island, New Zealand"
 )
 
 House.create!(
@@ -461,7 +499,8 @@ House.create!(
   title: 'Lake villa',
   lat: -45.394254,
   lng: 169.7927398,
-  pic_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvE4CyMnClDL_fduG8pjlCyQy42SC6cMR-OTYEqjlS0tXbZ8XhIg'
+  pic_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvE4CyMnClDL_fduG8pjlCyQy42SC6cMR-OTYEqjlS0tXbZ8XhIg',
+  address: "South island, New Zealand"
 )
 
 # south island
@@ -474,7 +513,8 @@ House.create!(
   title: 'Isle blue',
   lat: 44.8740686,
   lng: 15.6172025,
-  pic_url: 'https://manage.isleblue.co/uploads/villas/images/4090/new-zealand-villa-lodge-at-hills-2017-010.jpg'
+  pic_url: 'https://manage.isleblue.co/uploads/villas/images/4090/new-zealand-villa-lodge-at-hills-2017-010.jpg',
+  address: "Plitvice Lake, Croatia"
 )
 
 House.create!(
@@ -485,7 +525,8 @@ House.create!(
   title: 'Lake Bay Lodge',
   lat: 44.8831307,
   lng: 15.6055295,
-  pic_url: 'https://backroads-web.s3.amazonaws.com/images/trips/2019/slideshows/top/BDCS-venice-croatia-ocean-cruise-bike-tour-3.jpg'
+  pic_url: 'https://backroads-web.s3.amazonaws.com/images/trips/2019/slideshows/top/BDCS-venice-croatia-ocean-cruise-bike-tour-3.jpg',
+  address: "Plitvice Lake, Croatia"
 )
 
 House.create!(
@@ -496,7 +537,8 @@ House.create!(
   title: 'Villa Argemonia',
   lat: 44.8968125,
   lng: 15.5918395,
-  pic_url: 'https://mobilepics.luxuryretreats.com/mediastock/med/600x352/1/121/120500_Croatia_VillaArgemonia_02.jpg'
+  pic_url: 'https://mobilepics.luxuryretreats.com/mediastock/med/600x352/1/121/120500_Croatia_VillaArgemonia_02.jpg',
+  address: "Plitvice Lake, Croatia"
 )
 
 House.create!(
@@ -507,7 +549,8 @@ House.create!(
   title: 'Plitvice villa',
   lat: 44.9093665,
   lng: 15.5939853,
-  pic_url: 'https://www.elegantresorts.co.uk/WebImages/ImageStore1/108974.jpg'
+  pic_url: 'https://www.elegantresorts.co.uk/WebImages/ImageStore1/108974.jpg',
+  address: "Plitvice Lake, Croatia"
 )
 #Plitvice Lake
 
@@ -519,7 +562,8 @@ House.create!(
   title: 'Schwarzsee Hotel',
   lat: 45.9858636,
   lng: 7.6325739,
-  pic_url: 'https://mobilepics.luxuryretreats.com/mediastock/med/600x352/1/113/112785_swissalps_heinzjulienpenthouse_01.jpg'
+  pic_url: 'https://mobilepics.luxuryretreats.com/mediastock/med/600x352/1/113/112785_swissalps_heinzjulienpenthouse_01.jpg',
+  address: "Matterhorn, Switzerland",
 )
 
 House.create!(
@@ -530,7 +574,8 @@ House.create!(
   title: 'Hornli Hut',
   lat: 45.9788258,
   lng: 7.6365221,
-  pic_url: 'https://blog1.fkimg.com/wp-content/uploads/2016/04/Luxury-Lake-Houses-Queenstown-2.jpg'
+  pic_url: 'https://blog1.fkimg.com/wp-content/uploads/2016/04/Luxury-Lake-Houses-Queenstown-2.jpg',
+  address: "Matterhorn, Switzerland",
 )
 
 House.create!(
@@ -541,7 +586,8 @@ House.create!(
   title: 'Rifugio Duca degli Abruzzi',
   lat: 45.963972,
   lng: 7.6432169,
-  pic_url: 'https://i.dailymail.co.uk/i/pix/2014/10/23/1414058000854_wps_26_AX9GY4_jpg.jpg'
+  pic_url: 'https://i.dailymail.co.uk/i/pix/2014/10/23/1414058000854_wps_26_AX9GY4_jpg.jpg',
+  address: "Matterhorn, Switzerland",
 )
 
 House.create!(
@@ -552,7 +598,385 @@ House.create!(
   title: 'Carrel Rifugio',
   lat: 45.976589,
   lng: 7.6496971,
-  pic_url: 'https://images.gabrielstechnology.com/reno/imagereader.aspx?imageurl=http%3A%2F%2Fm.sothebysrealty.com%2F1050i215%2Fmddx39r423pymkpbcaawqw4c55i215&option=N&idclient=180&idlisting=180-l-871-33qkx2&w=480&permitphotoenlargement=false'
+  pic_url: 'https://images.gabrielstechnology.com/reno/imagereader.aspx?imageurl=http%3A%2F%2Fm.sothebysrealty.com%2F1050i215%2Fmddx39r423pymkpbcaawqw4c55i215&option=N&idclient=180&idlisting=180-l-871-33qkx2&w=480&permitphotoenlargement=false',
+  address: "Matterhorn, Switzerland",
 )
 
 # Matterhorn
+
+Review.create!(
+  body: "I cannot rave enough about this beautiful space! Blake was a fantastic host, providing us very detailed directions about his place and recommendations for food around Edinburgh that we may not have found ourselves. The apartment is stunning, with fascinating pieces and books everywhere, while still being very comfortable and welcoming with an amazing view. Wish we could have stayed longer and will certainly be back!",
+  rating: 5,
+  house_id: 1,
+  author_id: 1
+)
+
+Review.create!(
+  body: "Amazing property! I was just excited about the tree house but the property itself is amazing!!! Everyone we encountered was very nice. Teresa the house keeper was so accommodating and answered all of our questions. I definitely recommend this location for a unique getaway. Just make sure you don’t schedule too much like we did. Leave yourself time to experience the grounds. By the way watching the sunrise from bed is amazing!!!!",
+  rating:5,
+  house_id: 2,
+  author_id: 1
+)
+
+Review.create!(
+  body: "I cannot rave enough about this beautiful space! Fantastic host, providing us very detailed directions about his place and recommendations for food around Edinburgh that we may not have found ourselves. The apartment is stunning, with fascinating pieces and books everywhere, while still being very comfortable and welcoming with an amazing view. Wish we could have stayed longer and will certainly be back!",
+  rating:4,
+  house_id: 13,
+  author_id: 21
+)
+
+Review.create!(
+  body: "I cannot rave enough about this beautiful space! Fantastic host, providing us very detailed directions about his place and recommendations for food around Edinburgh that we may not have found ourselves. The apartment is stunning, with fascinating pieces and books everywhere, while still being very comfortable and welcoming with an amazing view. Wish we could have stayed longer and will certainly be back!",
+  rating:5,
+  house_id: 38,
+  author_id: 16
+)
+
+Review.create!(
+  body: "The best air bnb experience we have had to far, and all of our experiences have been positive. This flat is above and beyond and you have to see it in person to believe how gorgeous it really is. Absolute heaven.",
+  rating:4,
+  house_id: 2,
+  author_id: 4
+)
+
+Review.create!(
+  body: "I cannot rave enough about this beautiful space! Fantastic host, providing us very detailed directions about his place and recommendations for food around Edinburgh that we may not have found ourselves. The apartment is stunning, with fascinating pieces and books everywhere, while still being very comfortable and welcoming with an amazing view. Wish we could have stayed longer and will certainly be back!",
+  rating: 5,
+  house_id: 34,
+  author_id: 17
+)
+
+Review.create!(
+  body: "I cannot rave enough about this beautiful space! Fantastic host, providing us very detailed directions about his place and recommendations for food around Edinburgh that we may not have found ourselves. The apartment is stunning, with fascinating pieces and books everywhere, while still being very comfortable and welcoming with an amazing view. Wish we could have stayed longer and will certainly be back!",
+  rating:5,
+  house_id: 23,
+  author_id: 1
+)
+
+Review.create!(
+  body: "Amazing property! I was just excited about the tree house but the property itself is amazing!!! Everyone we encountered was very nice. Teresa the house keeper was so accommodating and answered all of our questions. I definitely recommend this location for a unique getaway. Just make sure you don’t schedule too much like we did. Leave yourself time to experience the grounds. By the way watching the sunrise from bed is amazing!!!!",
+  rating:4,
+  house_id: 24,
+  author_id: 2
+)
+
+Review.create!(
+  body:"A wonderful, beautiful and peaceful retreat. The pool, tennis court, ping pong table, & hammock were nice additions, but they key to us was the gorgeous layout of the land, the garden, the stone architecture around, and the overall sense of calm. Would definitely want to come back. Note: Bring mosquito repellent for outside, as there are a few in the garden during the summer months (none inside, which is perfectly safe). You should also expect to disconnect from the Internet as there is no Wifi in the room itself, just the common areas.",
+  rating:4,
+  house_id: 24,
+  author_id: 6
+)
+
+Review.create!(
+  body: "I cannot rave enough about this beautiful space! Fantastic host, providing us very detailed directions about his place and recommendations for food around Edinburgh that we may not have found ourselves. The apartment is stunning, with fascinating pieces and books everywhere, while still being very comfortable and welcoming with an amazing view. Wish we could have stayed longer and will certainly be back!",
+  rating:4,
+  house_id: 36,
+  author_id: 1
+)
+
+Review.create!(
+  body: "I cannot rave enough about this beautiful space! Fantastic host, providing us very detailed directions about his place and recommendations for food around Edinburgh that we may not have found ourselves. The apartment is stunning, with fascinating pieces and books everywhere, while still being very comfortable and welcoming with an amazing view. Wish we could have stayed longer and will certainly be back!",
+  rating:4,
+  house_id: 17,
+  author_id: 17
+)
+
+Review.create!(
+  body: "Amazing property! I was just excited about the tree house but the property itself is amazing!!! Everyone we encountered was very nice. Teresa the house keeper was so accommodating and answered all of our questions. I definitely recommend this location for a unique getaway. Just make sure you don’t schedule too much like we did. Leave yourself time to experience the grounds. By the way watching the sunrise from bed is amazing!!!!",
+  rating:5,
+  house_id: 21,
+  author_id: 12
+)
+
+Review.create!(
+  body: "I cannot rave enough about this beautiful space! Fantastic host, providing us very detailed directions about his place and recommendations for food around Edinburgh that we may not have found ourselves. The apartment is stunning, with fascinating pieces and books everywhere, while still being very comfortable and welcoming with an amazing view. Wish we could have stayed longer and will certainly be back!",
+  rating:4,
+  house_id: 20,
+  author_id: 20
+)
+
+Review.create!(
+  body: "Amazing property! I was just excited about the tree house but the property itself is amazing!!! Everyone we encountered was very nice. Teresa the house keeper was so accommodating and answered all of our questions. I definitely recommend this location for a unique getaway. Just make sure you don’t schedule too much like we did. Leave yourself time to experience the grounds. By the way watching the sunrise from bed is amazing!!!!",
+  rating: 5,
+  house_id: 15,
+  author_id: 7
+)
+
+Review.create!(
+  body: "Amazing property! I was just excited about the tree house but the property itself is amazing!!! Everyone we encountered was very nice. Teresa the house keeper was so accommodating and answered all of our questions. I definitely recommend this location for a unique getaway. Just make sure you don’t schedule too much like we did. Leave yourself time to experience the grounds. By the way watching the sunrise from bed is amazing!!!!",
+  rating:5,
+  house_id: 14,
+  author_id: 9
+)
+
+Review.create!(
+  body: "I cannot rave enough about this beautiful space! Fantastic host, providing us very detailed directions about his place and recommendations for food around Edinburgh that we may not have found ourselves. The apartment is stunning, with fascinating pieces and books everywhere, while still being very comfortable and welcoming with an amazing view. Wish we could have stayed longer and will certainly be back!",
+  rating:4,
+  house_id: 35,
+  author_id: 21
+)
+
+Review.create!(
+  body: "Amazing property! I was just excited about the tree house but the property itself is amazing!!! Everyone we encountered was very nice. Teresa the house keeper was so accommodating and answered all of our questions. I definitely recommend this location for a unique getaway. Just make sure you don’t schedule too much like we did. Leave yourself time to experience the grounds. By the way watching the sunrise from bed is amazing!!!!",
+  rating:4,
+  house_id: 34,
+  author_id: 22
+)
+
+
+Review.create!(
+  body: "Amazing property! I was just excited about the tree house but the property itself is amazing!!! Everyone we encountered was very nice. Teresa the house keeper was so accommodating and answered all of our questions. I definitely recommend this location for a unique getaway. Just make sure you don’t schedule too much like we did. Leave yourself time to experience the grounds. By the way watching the sunrise from bed is amazing!!!!",
+  rating:5,
+  house_id: 10,
+  author_id: 10
+)
+
+Review.create!(
+  body: "I cannot rave enough about this beautiful space! Fantastic host, providing us very detailed directions about his place and recommendations for food around Edinburgh that we may not have found ourselves. The apartment is stunning, with fascinating pieces and books everywhere, while still being very comfortable and welcoming with an amazing view. Wish we could have stayed longer and will certainly be back!",
+  rating:5,
+  house_id: 9,
+  author_id: 8
+)
+
+Review.create!(
+  body: "The best air bnb experience we have had to far, and all of our experiences have been positive. This flat is above and beyond and you have to see it in person to believe how gorgeous it really is. Absolute heaven.",
+  rating:5,
+  house_id: 8,
+  author_id: 9
+)
+
+Review.create!(
+  body: "A wonderful, beautiful and peaceful retreat. The pool, tennis court, ping pong table, & hammock were nice additions, but they key to us was the gorgeous layout of the land, the garden, the stone architecture around, and the overall sense of calm. Would definitely want to come back. Note: Bring mosquito repellent for outside, as there are a few in the garden during the summer months (none inside, which is perfectly safe). You should also expect to disconnect from the Internet as there is no Wifi in the room itself, just the common areas.",
+  rating:4,
+  house_id: 3,
+  author_id: 3
+)
+
+
+Review.create!(
+  body: "Amazing property! I was just excited about the tree house but the property itself is amazing!!! Everyone we encountered was very nice. Teresa the house keeper was so accommodating and answered all of our questions. I definitely recommend this location for a unique getaway. Just make sure you don’t schedule too much like we did. Leave yourself time to experience the grounds. By the way watching the sunrise from bed is amazing!!!!",
+  rating:5,
+  house_id: 4,
+  author_id: 4
+)
+
+Review.create!(
+  body: "Amazing property! I was just excited about the tree house but the property itself is amazing!!! Everyone we encountered was very nice. Teresa the house keeper was so accommodating and answered all of our questions. I definitely recommend this location for a unique getaway. Just make sure you don’t schedule too much like we did. Leave yourself time to experience the grounds. By the way watching the sunrise from bed is amazing!!!!",
+  rating:5,
+  house_id: 5,
+  author_id: 5
+)
+
+Review.create!(
+  body: "I cannot rave enough about this beautiful space! Fantastic host, providing us very detailed directions about his place and recommendations for food around Edinburgh that we may not have found ourselves. The apartment is stunning, with fascinating pieces and books everywhere, while still being very comfortable and welcoming with an amazing view. Wish we could have stayed longer and will certainly be back!",
+  rating:4,
+  house_id: 6,
+  author_id: 7
+)
+
+Review.create!(
+  body: "Amazing property! I was just excited about the tree house but the property itself is amazing!!! Everyone we encountered was very nice. Teresa the house keeper was so accommodating and answered all of our questions. I definitely recommend this location for a unique getaway. Just make sure you don’t schedule too much like we did. Leave yourself time to experience the grounds. By the way watching the sunrise from bed is amazing!!!!",
+  rating: 5,
+  house_id: 6,
+  author_id: 4
+)
+
+
+Review.create!(
+  body: "Amazing property! I was just excited about the tree house but the property itself is amazing!!! Everyone we encountered was very nice. Teresa the house keeper was so accommodating and answered all of our questions. I definitely recommend this location for a unique getaway. Just make sure you don’t schedule too much like we did. Leave yourself time to experience the grounds. By the way watching the sunrise from bed is amazing!!!!",
+  rating: 4,
+  house_id: 6,
+  author_id: 5
+)
+
+Review.create!(
+  body: "The best air bnb experience we have had to far, and all of our experiences have been positive. This flat is above and beyond and you have to see it in person to believe how gorgeous it really is. Absolute heaven.",
+  rating:4,
+  house_id: 2,
+  author_id: 18
+)
+
+Review.create!(
+  body: "I cannot rave enough about this beautiful space! Fantastic host, providing us very detailed directions about his place and recommendations for food around Edinburgh that we may not have found ourselves. The apartment is stunning, with fascinating pieces and books everywhere, while still being very comfortable and welcoming with an amazing view. Wish we could have stayed longer and will certainly be back!",
+  rating:5,
+  house_id: 18,
+  author_id: 2
+)
+
+
+
+Review.create!(
+  body: "The best air bnb experience we have had to far, and all of our experiences have been positive. This flat is above and beyond and you have to see it in person to believe how gorgeous it really is. Absolute heaven.",
+  rating:5,
+  house_id: 19,
+  author_id: 19
+)
+
+
+Review.create!(
+  body: "Amazing property! I was just excited about the tree house but the property itself is amazing!!! Everyone we encountered was very nice. Teresa the house keeper was so accommodating and answered all of our questions. I definitely recommend this location for a unique getaway. Just make sure you don’t schedule too much like we did. Leave yourself time to experience the grounds. By the way watching the sunrise from bed is amazing!!!!",
+  rating:4,
+  house_id: 21,
+  author_id: 20
+)
+
+Review.create!(
+  body: "A wonderful, beautiful and peaceful retreat. The pool, tennis court, ping pong table, & hammock were nice additions, but they key to us was the gorgeous layout of the land, the garden, the stone architecture around, and the overall sense of calm. Would definitely want to come back. Note: Bring mosquito repellent for outside, as there are a few in the garden during the summer months (none inside, which is perfectly safe).",
+  rating:5,
+  house_id: 12,
+  author_id: 14
+)
+Review.create!(
+  body: "The best air bnb experience we have had to far, and all of our experiences have been positive. This flat is above and beyond and you have to see it in person to believe how gorgeous it really is. Absolute heaven.",
+  rating:5,
+  house_id: 13,
+  author_id: 13
+)
+
+Review.create!(
+  body: "The best air bnb experience we have had to far, and all of our experiences have been positive. This flat is above and beyond and you have to see it in person to believe how gorgeous it really is. Absolute heaven.",
+  rating:5,
+  house_id: 25,
+  author_id: 1
+)
+
+Review.create!(
+  body: "The best air bnb experience we have had to far, and all of our experiences have been positive. This flat is above and beyond and you have to see it in person to believe how gorgeous it really is. Absolute heaven.",
+  rating:5,
+  house_id: 14,
+  author_id: 1
+)
+
+
+Review.create!(
+  body: "The best air bnb experience we have had to far, and all of our experiences have been positive. This flat is above and beyond and you have to see it in person to believe how gorgeous it really is. Absolute heaven.",
+  rating:4,
+  house_id: 27,
+  author_id: 1
+)
+
+Review.create!(
+  body: "The best air bnb experience we have had to far, and all of our experiences have been positive. This flat is above and beyond and you have to see it in person to believe how gorgeous it really is. Absolute heaven.",
+  rating:5,
+  house_id: 24,
+  author_id: 2
+)
+
+Review.create!(
+  body: "He was there whenever we needed anything and was very helpful. He made sure to stay in contact with us throughout our stay. The neighborhood was very cute and safe.",
+  rating: 5,
+  house_id: 1,
+  author_id: 8
+)
+
+Review.create!(
+  body: "Such a beautiful and secluded space with unreal views. Only a short walk to a couple or great cafes and breakfast spots, and short drive to the city center. Blake was super responsive and checked on us often. Recommended to anyone!",
+  rating: 5,
+  house_id: 1,
+  author_id: 12
+)
+
+Review.create!(
+  body: "Blake's place was lovely, spectacular views and such a perfect location!",
+  rating: 5,
+  house_id: 1,
+  author_id: 13
+)
+
+Review.create!(
+  body: "One of my favorite airbnbs I've stayed at yet! Blake's place is absolutely beautiful. Amazing views inside & out. Blake was super accommodating and awesome!!! He helped us with everything we asked about - even when he was sick! :)",
+  rating: 5,
+  house_id: 1,
+  author_id: 16
+)
+
+Review.create!(
+  body: "Great spot; incredible space and views, and Blake was extremely helpful and responsive the whole time. Would absolutely stay here again.",
+  rating: 5,
+  house_id: 1,
+  author_id: 17
+)
+
+Review.create!(
+  body: "Amazing stay in a stellar location",
+  rating: 5,
+  house_id: 1,
+  author_id: 21
+)
+
+Review.create!(
+  body: "The views from this listing are incredible! Blake is an attentive host and was very easy to work with. The space is comfortable and beautiful and the A/C was a definite plus for the hot days. The best part is the amazing view! It’s also within walking distance to some cute restaurants and a quick uber ride to the city center. We would definitely stay here again!",
+  rating: 5,
+  house_id: 1,
+  author_id: 20
+)
+
+Review.create!(
+  body: "The place was just as it looked in photos- really nice space and gorgeous views. Blake was super accommodating to our changing schedule. Would highly recommend.",
+  rating: 5,
+  house_id: 1,
+  author_id: 9
+)
+
+Review.create!(
+  body: "Certainly recommend staying here. Amazing views of the mountains and very close to the highway for easy access to everything the Yosemite has to offer. An absolute pleasure!",
+  rating: 5,
+  house_id: 1,
+  author_id: 10
+)
+
+Review.create!(
+  body: "This is one of the best AirBnbs we've ever stayed in. From the magical setting in olive groves to the view of the Tuscan hillside, this is a fantastic, romantic getaway! ",
+  rating: 5,
+  house_id: 1,
+  author_id: 11
+)
+
+Review.create!(
+  body: "I hesitate to write such a glowing review because I don't want the secret of this place to get out, but I can't help it. The treehouse at Casa Barthel is amazing. It's cozy, so don't expect a ton of space, and the bathroom doesn't provide much privacy if you're sharing the space with a partner, but other than that, this is the dream scenario for an AirBnB.",
+  rating: 5,
+  house_id: 1,
+  author_id: 12
+)
+
+Review.create!(
+  body: "Amazing stay in a stellar location",
+  rating: 5,
+  house_id: 31,
+  author_id: 21
+)
+
+Review.create!(
+  body: "The views from this listing are incredible! Blake is an attentive host and was very easy to work with. The space is comfortable and beautiful and the A/C was a definite plus for the hot days. The best part is the amazing view! It’s also within walking distance to some cute restaurants and a quick uber ride to the city center. We would definitely stay here again!",
+  rating: 5,
+  house_id: 38,
+  author_id: 20
+)
+
+Review.create!(
+  body: "The place was just as it looked in photos- really nice space and gorgeous views. Blake was super accommodating to our changing schedule. Would highly recommend.",
+  rating: 5,
+  house_id: 37,
+  author_id: 9
+)
+
+Review.create!(
+  body: "Certainly recommend staying here. Amazing views of the mountains and very close to the highway for easy access to everything the Yosemite has to offer. An absolute pleasure!",
+  rating: 5,
+  house_id: 8,
+  author_id: 10
+)
+
+Review.create!(
+  body: "This is one of the best AirBnbs we've ever stayed in. From the magical setting in olive groves to the view of the Tuscan hillside, this is a fantastic, romantic getaway! ",
+  rating: 5,
+  house_id: 7,
+  author_id: 11
+)
+
+Review.create!(
+  body: "I hesitate to write such a glowing review because I don't want the secret of this place to get out, but I can't help it. The treehouse at Casa Barthel is amazing. It's cozy, so don't expect a ton of space, and the bathroom doesn't provide much privacy if you're sharing the space with a partner, but other than that, this is the dream scenario for an AirBnB.",
+  rating: 5,
+  house_id: 6,
+  author_id: 12
+)

@@ -40,14 +40,23 @@
 }
 
 .index-item-info {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 78c1d8d6ae537da7e1afaec0d836847469237753
   height: 15%;
   border-left: 1px solid #e6e6e6;
   font-size: 15px;
   font-weight: 300px;
   font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+<<<<<<< HEAD
   color: #484848;
   -webkit-font-smoothing: antialiased;
 
+=======
+  color:#484848;
+  -webkit-font-smoothing: antialiased;
+>>>>>>> 78c1d8d6ae537da7e1afaec0d836847469237753
 }
 
 .index-item-copy {

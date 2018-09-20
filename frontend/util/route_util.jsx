@@ -14,7 +14,6 @@ const Auth = ({ component: Component, path, loggedIn, exact }) => (
 );
 
 const Protected = ({ component: Component, path, loggedIn, exact, openModal }) => {
-
   return(
   <Route path={path} exact={exact} render={(props) => {
      if (loggedIn) {
@@ -24,7 +23,8 @@ const Protected = ({ component: Component, path, loggedIn, exact, openModal }) =
         return null;
       }
     }} />
-);}
+  );
+};
 
 const mapStateToProps = state => ({
   loggedIn: Boolean(state.session.id)

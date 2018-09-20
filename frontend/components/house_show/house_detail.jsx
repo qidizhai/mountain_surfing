@@ -16,17 +16,18 @@ const reviewList = (reviews = [], users=[]) => {
 };
 
 const HouseDetail = ({ house, reviews, users, houseId }) => {
+
   return (
     <div>
       <div className="title-address-pic">
         <div className="title-holder">
           <div>
             <h1 className="house-title">{house.title}</h1>
-            <h3 className="location">Mariposa</h3>
+            <h3 className="location">{house.address}</h3>
           </div>
           <div className="profile-picture-name">
             <img className="profile-image" src={house.host_url}/>
-            <h3>{house.host_name}</h3>
+            <h3 className="host-name">{house.host_name}</h3>
           </div>
         </div>
 
@@ -159,14 +160,14 @@ const HouseDetail = ({ house, reviews, users, houseId }) => {
       <div className="add-border"></div>
       <h3 className="amenities">Sleeping arrangements</h3>
       <div className="arrangements">
-        <div className="arrangements-content-left">
+        <div className="arrangements-content">
           <div className="padding">
             <h3>🛏</h3>
             <h4 className="bold-arrangements arrangements-font">Bedroom 5</h4>
             <p className="arrangements-font">2 king bed, 2 queen bed and 1 sofa bed</p>
           </div>
         </div>
-        <div className="arrangements-content-right">
+        <div className="arrangements-content right">
           <div className="padding">
             <h3>🌹🌷</h3>
             <h4 className="bold-arrangements arrangements-font">Common spaces</h4>
