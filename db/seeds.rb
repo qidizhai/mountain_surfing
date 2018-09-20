@@ -6,18 +6,17 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 House.delete_all
-<<<<<<< HEAD
+
 User.delete_all
 ApplicationRecord.connection.reset_pk_sequence!('houses')
 ApplicationRecord.connection.reset_pk_sequence!('users')
-=======
+
 Review.delete_all
 User.delete_all
 ApplicationRecord.connection.reset_pk_sequence!('houses')
 ApplicationRecord.connection.reset_pk_sequence!('users')
 ApplicationRecord.connection.reset_pk_sequence!('reviews')
 
->>>>>>> 78c1d8d6ae537da7e1afaec0d836847469237753
 
 User.create!(
   username: "Blake Z",
