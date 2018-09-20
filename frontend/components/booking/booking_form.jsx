@@ -4,9 +4,8 @@ class Booking extends React.Component {
   constructor(props){
     super(props);
     this.state={
-      start_date: "Check in",
-      end_date: "Check out",
-      num_guest: 1,
+      start_date: "",
+      end_date: "",
       book: "Request to book"
     };
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -15,12 +14,16 @@ class Booking extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    const booking = Object.assign({}, {
+      house_id: this.props.house.id,
+      start_date: this.state.start_date,
+      end_date: this.state.end_date,
+      status: 'PENDING'
+    });
     this.setState({
-      start_date: "Check in",
-      end_date: "Check out",
-      num_guest: 1,
       book: "Request has been sent"
     });
+    //this.props.createBooking(booking);
   }
 
   update(field){
@@ -35,7 +38,7 @@ class Booking extends React.Component {
     return (
       <div className="booking-form-container">
         <div className="booking-wrap">
-          <p className="pernight-booking-font"><span className="price-booking">${this.props.price}</span> per night</p>
+          <p className="pernight-booking-font"><span className="price-booking">${this.props.house.price}</span> per night</p>
           <div className="add-bar"></div>
           <form className="booking-sub-container" onSubmit={this.handleSubmit}>
             <h5>Dates</h5>
@@ -62,7 +65,6 @@ class Booking extends React.Component {
       </div>
     );
   }
-
 }
 
 export default Booking;

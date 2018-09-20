@@ -21,6 +21,14 @@ export const createReview = review => (
   })
 );
 
+export const createBooking = booking => (
+  $.ajax({
+    method: 'POST',
+    url: `api/bookings`,
+    data: { booking }
+  })
+);
+
 export const createHouse = house =>(
   $.ajax({
     method: 'POST',

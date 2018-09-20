@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import { fetchHouse } from '../../actions/house_actions';
 import { selectReviewsForHouse, selectHouse } from '../../reducers/selectors';
+import { createBooking } from '../../actions/house_actions';
 import HouseShow from './house_show';
 
 const mapStateToProps = (state, ownProps) => {
@@ -19,7 +20,8 @@ const mapStateToProps = (state, ownProps) => {
 
 
 const mapDispatchToProps = dispatch => ({
-  fetchHouse: id => dispatch(fetchHouse(id))
+  fetchHouse: id => dispatch(fetchHouse(id)),
+  createBooking: booking => dispatch(createBooking(booking))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(HouseShow);

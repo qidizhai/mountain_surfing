@@ -4,12 +4,14 @@ class Api::HousesController < ApplicationController
   def index
     houses = bounds ? House.in_bounds(bounds) : House.all
     @houses = houses.includes(:reviews)
+    @houses = houses.includes(:bookings)
     render :index
   end
 
   def show
     @house = House.find(params[:id])
     @reviews = @house.reviews
+    @bookings = @house.bookings
     user_ids = @reviews.map{|review| review.author_id}
     @users = User.find(user_ids)
   end
