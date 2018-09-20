@@ -17,7 +17,7 @@ export const receiveHouse = data => ({
 export const receiveReview = review => ({
   type: RECEIVE_REVIEW,
   review
-})
+});
 
 export const createReview = review => dispatch => (
   APIUtil.createReview(review).then(review => dispatch(receiveReview(review)))
@@ -25,7 +25,7 @@ export const createReview = review => dispatch => (
 
 export const fetchHouses = (filters) => dispatch => {
   // debugger
-  return APIUtil.fetchHouses(filters).then(houses => dispatch(receiveHouses(houses)))
+  return APIUtil.fetchHouses(filters).then(houses => dispatch(receiveHouses(houses)));
 };
 
 export const fetchHouse = id => dispatch => (

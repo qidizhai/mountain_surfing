@@ -1,0 +1,83 @@
+.booking-form-container {
+  border: 0.5px solid lightgrey;
+  margin-top: 20px;
+  width: 70%;
+}
+
+.booking-wrap {
+  padding: 20px 20px 20px 20px;
+  font-size: 16px;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #484848;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: normal;
+}
+
+.price-booking {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.pernight-booking-font {
+  font-size: 12px;
+}
+
+.add-bar {
+  margin-top: 20px;
+  border: 0.5px solid lightgrey;
+  margin-bottom: 20px;
+}
+
+.date-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:0.5px solid lightgrey;
+  width: 100%;
+  height: 50px;
+}
+
+.symbol {
+  width: 10%;
+}
+
+.book-submit {
+  margin-top: 20px;
+  text-align: center;
+  width: 96%;
+  font-size: 16px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: 800;
+  min-width: 77.6656px;
+  padding-right: 8px;
+  padding-left: 8px;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+  background: rgb(255, 90, 95);
+  border-color: transparent;
+}
+
+.note-booking {
+  text-align: center;
+}
+
+.view-booking {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.bottom-booking {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.lightbulb {
+  margin-left: 20px;
+  font-size: 50px;
+}

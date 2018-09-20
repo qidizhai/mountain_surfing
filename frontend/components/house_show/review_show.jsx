@@ -16,7 +16,6 @@ const render_star = (num) => {
 };
 
 const Review = ({review, users}) => {
-
   if (!review) return null;
   const { rating, body } = review;
 
