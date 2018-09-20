@@ -12,7 +12,7 @@ export const receiveHouses = houses => ({
 export const receiveHouse = data => ({
   type: RECEIVE_HOUSE,
   data
-});
+}); //data: houses, reviews and users
 
 export const receiveReview = review => ({
   type: RECEIVE_REVIEW,

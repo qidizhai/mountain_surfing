@@ -16,13 +16,14 @@ const reviewList = (reviews = [], users=[]) => {
 };
 
 const HouseDetail = ({ house, reviews, users, houseId }) => {
+
   return (
     <div>
       <div className="title-address-pic">
         <div className="title-holder">
           <div>
             <h1 className="house-title">{house.title}</h1>
-            <h3 className="location">Mariposa</h3>
+            <h3 className="location">{house.address}</h3>
           </div>
           <div className="profile-picture-name">
             <img className="profile-image" src={house.host_url}/>
