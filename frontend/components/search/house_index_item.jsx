@@ -24,8 +24,8 @@ class IndexItem extends React.Component {
           <img className="house-image" src={this.props.house.pic_url}/>
         </div>
         <div className="index-item-info">
-          <span className="index-item-category">Description:</span>
-          <span className="index-item-copy">{this.props.house.description}</span>
+
+          <h4 className="index-item-copy">{this.props.house.title}</h4>
         </div>
       </nav>
 
