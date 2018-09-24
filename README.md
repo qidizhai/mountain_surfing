@@ -1,6 +1,6 @@
 # Mountainsurfing
 
-[Live](https://moutainsurfing.herokuapp.com)
+[Live](https://mountainsurfing.herokuapp.com)
 
 Moutainsurfing is a web application which allows user to search for and book rooms at mountain houses all over the world! This project is built by using JavaScript, React/Redux, CSS, Ruby on Rails and SQL.
 
