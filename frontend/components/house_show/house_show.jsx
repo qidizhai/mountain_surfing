@@ -51,7 +51,7 @@ class HouseShow extends React.Component{
                     fetchHouse = {fetchHouse}
                   />
                 </div>
-                <Booking house={house} createBooking={this.props.createBooking}/>
+                <Booking house={house} createBooking={this.props.createBooking} bookingStatus={this.props.bookingStatus}/>
             </div>
           </div>
         </div>

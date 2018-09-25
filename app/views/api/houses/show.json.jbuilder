@@ -12,7 +12,7 @@ json.reviews do
 end
 
 json.bookings do
-  @house.bookings.each do |review|
+  @house.bookings.each do |booking|
     json.set! booking.id do
       json.partial! 'api/bookings/booking', booking: booking
     end

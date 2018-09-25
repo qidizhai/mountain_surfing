@@ -14,7 +14,6 @@ const housesReducer = (state = {}, action) => {
       return newState;
     case RECEIVE_BOOKING:
       let newState1 = merge({}, state);
-      newState1[action.booking.house_id].houseIds.push(action.booking.id);
       return newState1;
     default:
       return state;

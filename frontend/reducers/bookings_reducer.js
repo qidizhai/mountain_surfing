@@ -11,7 +11,7 @@ const BookingsReducer = (state = {}, action) => {
     case RECEIVE_HOUSE:  //reviews is from Jbuilder backend, data is { house, reviews }
       return merge({}, state, action.data.bookings); //state is review(from entities reducer) and action is houses
     case RECEIVE_BOOKING:
-      return merge({}, state, { [action.book.id]: action.book });
+      return merge({}, state, { [action.booking.id]: action.booking });
     default:
       return state;
   }

@@ -7,14 +7,18 @@ import HouseShow from './house_show';
 const mapStateToProps = (state, ownProps) => {
   const houseId = parseInt(ownProps.match.params.houseId);
   const users = state.entities.users;
-
+  let bookingStatus = 'PENDING';
+  if (Object.keys(state.entities.bookings).length !== 0) {
+    bookingStatus = state.entities.bookings[Object.keys(state.entities.bookings)[Object.keys(state.entities.bookings).length-1]].status;
+  }
   const house = selectHouse(state.entities, houseId);
   const reviews = selectReviewsForHouse(state.entities, house);
   return {
     users,
     houseId,
     house,
-    reviews
+    reviews,
+    bookingStatus
   };
 };
 

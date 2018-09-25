@@ -6,6 +6,7 @@ class Booking extends React.Component {
     this.state={
       start_date: "",
       end_date: "",
+      status: "PENDING",
       book: "Request to book"
     };
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -23,7 +24,7 @@ class Booking extends React.Component {
     this.setState({
       book: "Request has been sent"
     });
-    //this.props.createBooking(booking);
+    this.props.createBooking(booking);
   }
 
   update(field){
@@ -35,6 +36,9 @@ class Booking extends React.Component {
   }
 
   render(){
+    let status = "";
+    if (this.props.bookingStatus)
+       status = this.props.bookingStatus;
     return (
       <div className="booking-form-container">
         <div className="booking-wrap">
@@ -61,6 +65,7 @@ class Booking extends React.Component {
             </div>
             <div className="lightbulb">💡</div>
           </div>
+          <div>{status}</div>
         </div>
       </div>
     );
