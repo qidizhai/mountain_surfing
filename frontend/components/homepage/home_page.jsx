@@ -2,17 +2,57 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 class HomePage extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      className: "hero mod-join hiker",
+      link: "https://www.lonelyplanet.com/travel-tips-and-articles/scaling-new-heights-magnificent-mountains-almost-anyone-can-conquer/40625c8c-8a11-5710-a052-1479d2755041",
+      label: "Scaling new heights: magnificent mountains almost anyone can conquer"
+    };
+    this.update = this.update.bind(this);
+  }
+
+  componentDidMount() {
+    this.intervalId = setTimeout(this.update, 5000);
+  }
+
+  componentWillUpdate(){
+    this.intervalId = setTimeout(this.update, 5000);
+  }
+
+  update(){
+    if (this.state.className === "hero mod-join hiker"){
+        this.setState({
+          className: "hero mod-join forest",
+          link: "https://www.lonelyplanet.com/travel-tips-and-articles/go-for-the-glow-a-guide-to-mother-natures-light-shows/40625c8c-8a11-5710-a052-1479d27577cd",
+          label: "Go for the glow: a guide to mother natures light shows"
+        });
+    } else if(this.state.className === "hero mod-join forest") {
+      this.setState({
+        className: "hero mod-join family",
+        link: "https://www.nytimes.com/interactive/2018/travel/places-to-visit.html",
+        label: "Best places to travel in 2018"
+      });
+    } else if (this.state.className === "hero mod-join family") {
+        this.setState({
+          className: "hero mod-join hiker",
+          link: "https://www.lonelyplanet.com/travel-tips-and-articles/scaling-new-heights-magnificent-mountains-almost-anyone-can-conquer/40625c8c-8a11-5710-a052-1479d2755041",
+          label: "Scaling new heights: magnificent mountains almost anyone can conquer"
+      });
+    }
+  }
+
   render() {
     return (
     <div>
-      <section className="hero mod-join">
-          <div className="hero-content">
-            <h1 className="hero-content-title">
-              Stay with locals and Meet travelers
-            </h1>
-            <h2 className="hero-content-subtitle">
-              Share authentic travel experience
-            </h2>
+      <section className={this.state.className}>
+        <div className="hero-content">
+          <h4 className="articles">FEATURED ARTICLES</h4>
+          <a className="link-edit" href={`${this.state.link}`}>{this.state.label}</a>
+          <br/>
+          <br/>
+          <a className="read-more" href={`${this.state.link}`}>READ MORE >
+          </a>
         </div>
       </section>
       <section className='hero'>
@@ -117,12 +157,6 @@ class HomePage extends React.Component {
             </Link>
           </div>
         </div>
-      </section>
-      <section className="plan-video">
-        <video className="video" controls>
-          <source src="https://ia800300.us.archive.org/17/items/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4" type="video/ogg"></source>
-          Your browser does not support the video
-        </video>
       </section>
       <section className="plan-trips">
         <div className="trip-content">

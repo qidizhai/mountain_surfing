@@ -14,46 +14,72 @@
  *= require_self
  */
 
- .hero.mod-join {
+ .hero.mod-join.family {
    margin-top: 25px;
-   background-image: url(https://ht-assets.couchsurfing.com/assets/homepage/have-fun-with-couchsurfing-0c56538cda235c5806dc956559fe942179937b39d686329158cd1987801ce115.jpg);
+   background-image: url(https://lonelyplanetstatic.imgix.net/copilot/images/ZmFtaWx5LXJvYWQtdHJpcC1sb25lbHktcGxhbmV0LmpwZ01vbiBTZXAgMjQgMjAxOCAwODo1NTo1MSBHTVQrMDAwMCAoVVRDKQ%3D%3D.jpg?q=40&w=2000&h=1125&fit=crop&fm=pjpg);
    background-position: center center;
    background-repeat: no-repeat;
-   text-align: center;
    height: 400px;
+   transition: background-image 1s ease-in-out;
+
  }
 
+ .hero.mod-join.hiker {
+   margin-top: 25px;
+   background-image: url(https://lonelyplanetstatic.imgix.net/copilot/images/dHJhdmVsaW5zdXJhbmNlX2xvbmVseXBsYW5ldC5qcGdUaHUgU2VwIDIwIDIwMTggMDk6MTc6MzggR01UKzAwMDAgKFVUQyk%3D.jpg?q=40&w=2000&h=1125&fit=crop&fm=pjpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   height: 400px;
+   transition: background-image 1s ease-in-out;
 
- .hero-content {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 30px 20px;
-  width: 100%;
-  margin-bottom: 0;
-  margin: 0 0 0.75em 0;
+ }
+
+ .hero.mod-join.forest {
+   margin-top: 25px;
+   background-image: url(https://lonelyplanetstatic.imgix.net/copilot/images/ZmlyZWZseV9sb25lbHlwbGFuZXQuanBnVHVlIFNlcCAyNSAyMDE4IDA4OjQyOjUzIEdNVCswMDAwIChVVEMp.jpg?q=40&w=2000&h=1125&fit=crop&fm=pjpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   height: 400px;
+   transition: background-image 1s ease-in-out;
+
+ }
+
+.articles {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06px;
 }
 
-  .hero-content-title {
-    color: #fff;
-    font-size: 34px;
-    font-weight: lighter;
-    line-height: 1.1;
-    margin-top: 15px;
-    margin: 100px 0 0.75em 0;
-    font-family: monospace;
-  }
-
-  .hero-content-subtitle {
-    color: #fff;
-    font-size: 24px;
-    font-weight: lighter;
-    line-height: 1.1;
-    margin-top: 5px;
-    /* margin-left: 450px;
-    margin-right: auto;
-    width: 50%; */
-    font-family: monospace;
+.hero-content {
+  margin-left: 15px;
+  color: white;
+  font-family: Benton Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  width: 45%;
+  transition: opacity 1s ease;
+  -webkit-font-smoothing: antialiased;
 }
+
+.link-edit {
+  opacity: 1;
+  font-weight: 600;
+  font-size: calc(8px + 2vw);
+  letter-spacing: -0.56px
+}
+
+.read-more {
+  margin-top: 30px;
+  margin-left: 0;
+  width: 20%;
+  font-size: 0.7rem;
+}
+
+
+
+/* .hero-content > h2 {
+  font-size: 28px;
+} */
+
+
 
 footer {
   background-color: #fff;
