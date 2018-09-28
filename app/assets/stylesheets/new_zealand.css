@@ -1,0 +1,92 @@
+.hero.mod-join.evening {
+  margin-top: 25px;
+  background-image: url(https://lonelyplanetimages.imgix.net/mastheads/95318935.jpg?h=768&sharp=10&vib=20);
+  background-repeat: no-repeat;
+  height: 500px;
+  transition: background-image 1s ease-in-out;
+}
+
+.hero.mod-join.glacial {
+  margin-top: 25px;
+  background-image: url(https://lonelyplanetimages.imgix.net/mastheads/GettyImages-148333018_high.jpg?h=490&sharp=10&vib=20);
+  background-repeat: no-repeat;
+  height: 500px;
+  transition: background-image 1s ease-in-out;
+}
+
+.hero.mod-join.rock {
+  margin-top: 25px;
+  background-image: url(https://lonelyplanetimages.imgix.net/mastheads/GettyImages-560475891_super.jpg?h=490&sharp=10&vib=20);
+  background-repeat: no-repeat;
+  height: 500px;
+  transition: background-image 1s ease-in-out;
+}
+
+.web-title {
+  font-family: Benton Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  color: white;
+  text-align: center;
+  transition: opacity 1s ease;
+  -webkit-font-smoothing: antialiased;
+  margin-left: 20%;
+  margin-right: 20%;
+  width: 60%;
+}
+
+.region {
+  font-size: 1rem;
+  letter-spacing: -.02rem;
+  line-height: 1;
+  opacity: 0.8;
+}
+
+.web-page-country {
+  font-size: 6rem;
+  font-weight: 600;
+  letter-spacing: -.3rem;
+  line-height: .9;
+  opacity: 0.8;
+}
+
+.web-page-label {
+  font-family: Miller Daily,Georgia,Times,Times New Roman,serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1;
+  opacity: 0.8;
+}
+
+.welcome-info {
+  margin-top: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  text-align: center;
+  color: #3b444f;
+  font-family: Benton Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 2.8rem;
+  font-weight: 100;
+  line-height: 1.3;
+  margin-bottom: 40px;
+}
+
+.welcome-title {
+  margin-bottom: 80px;
+}
+
+.welcome-intro {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.55556;
+  margin-bottom: 50px;
+}
+
+.top-hosts {
+  text-align: center;
+  color: #3b444f;
+  font-family: Benton Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 2.8rem;
+  font-weight: 100;
+  line-height: 1.3;
+  margin-bottom: 6rem;
+}

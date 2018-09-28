@@ -21,7 +21,6 @@
    background-repeat: no-repeat;
    height: 400px;
    transition: background-image 1s ease-in-out;
-
  }
 
  .hero.mod-join.hiker {
@@ -31,7 +30,6 @@
    background-repeat: no-repeat;
    height: 400px;
    transition: background-image 1s ease-in-out;
-
  }
 
  .hero.mod-join.forest {
@@ -41,7 +39,6 @@
    background-repeat: no-repeat;
    height: 400px;
    transition: background-image 1s ease-in-out;
-
  }
 
 .articles {

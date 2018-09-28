@@ -146,7 +146,7 @@ class HomePage extends React.Component {
               </figure>
             </Link>
 
-            <Link to="/houses">
+            <Link to="/houses/new_zealand">
               <figure className="yosemite">
                 <img className="destination_img" alt="South Island" src="https://www.rei.com/adventures/assets/adventures/images/trip/gallery/pacific/nzs_05">
                 </img>
@@ -157,6 +157,29 @@ class HomePage extends React.Component {
             </Link>
           </div>
         </div>
+      </section>
+      <section className="guide-onhold">
+        <div className="book-onhold">
+          <div className="book-dis">
+            <a href="https://shop.lonelyplanet.com/products/the-best-moment-of-your-life-1">
+              <h2 className="book-title">The Best Moment of Your Life</h2>
+              <p className="book-description">100 notable voices from the world of travel share their most profound, moving and unforgettable travel experiences – moments that shaped them and changed their perspectives on the world.</p>
+              <span className="buy-book">BUY THE BOOK ></span>
+            </a>
+          </div>
+          <img className="image" src="https://lonelyplanetstatic.imgix.net/copilot/images/QXNzZXRfZm9yX3Byb21vXy1fQmVzdF9Nb21lbnRzLnBuZ01vbiBTZXAgMDMgMjAxOCAwODozNDoyNSBHTVQrMDAwMCAoVVRDKQ%3D%3D.jpg?"/>
+        </div>
+        <div className="book-onhold">
+          <div className="book-dis">
+            <a href="https://www.lonelyplanet.com/guides">
+              <h2 className="book-title">Guides recommended by Mountain Surfing</h2>
+              <p className="book-description">Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the ultimate resource before and during a trip.</p>      
+              <span className="buy-book">CHECK OUR GUIDES ></span>
+            </a>
+          </div>
+          <img className="image" src="https://lonelyplanetstatic.imgix.net/copilot/images/R3VpZGVzUmlvV2Fsa3Rocm91Z2hfbmV3LnBuZ01vbiBTZXAgMDMgMjAxOCAwODozNTo0OSBHTVQrMDAwMCAoVVRDKQ%3D%3D.jpg??"/>
+        </div>
+
       </section>
       <section className="plan-trips">
         <div className="trip-content">

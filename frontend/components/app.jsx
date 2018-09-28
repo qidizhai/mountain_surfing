@@ -16,6 +16,7 @@ import HouseShowContainer from './house_show/house_show_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import HomePage from './homepage/home_page';
 import Modal from './modal/modal';
+import NewZealand from './countries/new_zealand_container';
 
 const App = () => (
   <div className="whole-page">
@@ -32,6 +33,7 @@ const App = () => (
       <Route exact path="/" component={HomePage} />
 
       <Route exact path="/houses" component={SearchContainer} />
+      <Route exact path="/houses/new_zealand" component={NewZealand} />
       <Route path="/houses/:houseId" component={HouseShowContainer} />
     </Switch>
   </div>

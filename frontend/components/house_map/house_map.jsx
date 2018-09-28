@@ -5,24 +5,29 @@ import { withRouter } from 'react-router-dom';
 
 
 class HouseMap extends React.Component {
+  constructor(props){
+    super(props);
+  }
 
   componentDidMount() {
+    const map = this.refs.map;
     let mapOptions;
     if (this.props.singleHouse){
-        
         mapOptions = {
         center: {lat: this.props.house.lat, lng: this.props.house.lng},
-        zoom: 14
+        zoom: 14,
+        mapTypeId: 'satellite'
        };
 
     } else{
         mapOptions = {
-        center: { lat: 37.7758, lng: -122.435 }, // this is SF
-        zoom: 4
+        center: { lat: this.props.lat, lng: this.props.lng }, // this is SF
+        zoom: 6,
+        mapTypeId: 'satellite'
       };
     }
     var input = document.getElementById('pac-input');
-    this.map = new google.maps.Map(this.mapNode, mapOptions);
+    this.map = new google.maps.Map(map, mapOptions);
 
     this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick.bind(this));
     if (this.props.singleHouse) {
@@ -68,7 +73,7 @@ class HouseMap extends React.Component {
   render() {
     return (
       <div>
-          <div id='map-container' ref={ map => this.mapNode = map }>
+          <div id='map-container' ref="map">
             Map
           </div>
      </div>

@@ -15,7 +15,6 @@ class HouseShow extends React.Component{
   }
 
   componentWillReceiveProps(nextProps){
-
     if (this.props.houseId !== parseInt(nextProps.match.params.houseId))
       this.props.fetchHouse(nextProps.match.params.houseId);
   }
