@@ -1,3 +1,35 @@
+.article-holder {
+  display: flex;
+  justify-content: space-between;
+  font-family: Benton Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: left;
+}
+
+.article-name {
+  font-size: 20px;
+}
+
+.article-border {
+  border: 0.5px solid lightgrey;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.article-image {
+  width: 150px;
+}
+
+.article-content {
+  width: 50%;
+}
+
 .main-index {
   margin-top: 20px;
   display: flex;
@@ -51,4 +83,12 @@
 
 .index-item-copy {
   text-align: center;
+}
+
+.hero.mod-join.index {
+  margin-top: 25px;
+  background-image: url(https://lonelyplanetstatic.imgix.net/copilot/images/Ym9va2luZy1tYXN0aGVhZC1ob3RlbHMuanBnRnJpIEp1bCAyMCAyMDE4IDEzOjA3OjM3IEdNVCswMDAwIChVVEMp.jpg?fit=crop&fm=pjpg&h=1125&q=40&w=2000);
+  background-repeat: no-repeat;
+  height: 500px;
+  transition: background-image 1s ease-in-out;
 }

@@ -10,6 +10,14 @@ class Booking < ApplicationRecord
   belongs_to :house
   belongs_to :user
 
+  def start_after_end?
+    if self.start_date >= self.end_date
+      return true
+    else
+      return false
+    end
+  end
+
   def approve!
     raise 'not pending' unless self.status == 'PENDING'
     transaction do
@@ -73,5 +81,5 @@ class Booking < ApplicationRecord
     errors[:start_date] << 'must specify a start date' unless start_date
     errors[:end_date] << 'must specify an end date' unless end_date
     errors[:start_date] << 'must come before end date' if start_date > end_date
-  end       
+  end
 end

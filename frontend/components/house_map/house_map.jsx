@@ -22,7 +22,7 @@ class HouseMap extends React.Component {
     } else{
         mapOptions = {
         center: { lat: this.props.lat, lng: this.props.lng }, // this is SF
-        zoom: 6,
+        zoom: 5,
         mapTypeId: 'satellite'
       };
     }
@@ -40,7 +40,11 @@ class HouseMap extends React.Component {
   }
 
   handleMarkerClick(house) {
-    this.props.history.push(`houses/${house.id}`);
+    if(this.props.match.path == "/houses"){
+      this.props.history.push(`houses/${house.id}`);
+    } else {
+      this.props.history.push(`${house.id}`);
+    }
   }
 
   registerListeners() {

@@ -7,14 +7,16 @@ class Api::BookingsController < ApplicationController
 
   def create
     @booking = Booking.new(booking_params)
+    debugger
     @booking.user_id = current_user.id
-    if self.approve
-       if @booking.save
+    if !@booking.start_after_end?
+        if @booking.save
+          @booking.status = 'APPROVED'
           render :show
-       end
+        end
     else
       @booking.status = 'REJECTED'
-      render :show
+      render json: ["The checkout date must come after check in date"]
     end
   end
 

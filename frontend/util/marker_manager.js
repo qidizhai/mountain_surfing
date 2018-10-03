@@ -15,7 +15,7 @@ class MarkerManager {
   }
 
   createMarkerFromHouse(house){
-    
+
     const houseLatlng = new google.maps.LatLng(house.lat, house.lng);
     const marker = new google.maps.Marker({
       position: houseLatlng,
