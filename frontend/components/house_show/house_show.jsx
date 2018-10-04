@@ -1,7 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import Booking from '../booking/booking_form';
-
 import HouseMap from '../house_map/house_map';
 import HouseDetail from './house_detail';
 import ReviewFormContainer from './review_form_container';
