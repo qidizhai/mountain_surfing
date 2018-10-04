@@ -10,7 +10,6 @@ import { ProtectedRoute } from '../../util/route_util';
 class HouseShow extends React.Component{
 
   componentDidMount(){
-
     this.props.fetchHouse(this.props.match.params.houseId);
   }
 
@@ -20,7 +19,6 @@ class HouseShow extends React.Component{
   }
 
    render(){
-
       if (!this.props.house.id) return null;
       const { users, house, houseId, fetchHouse, reviews } = this.props;
       const houses = {
@@ -50,7 +48,12 @@ class HouseShow extends React.Component{
                     fetchHouse = {fetchHouse}
                   />
                 </div>
-                <Booking house={house} createBooking={this.props.createBooking} bookingStatus={this.props.bookingStatus}/>
+                <Booking house={house}
+                         createBooking={this.props.createBooking}
+                         bookingStatus={this.props.bookingStatus}
+                         errors={this.props.errors}
+                         clearBookingErrors={this.props.clearBookingErrors}
+                         />
             </div>
           </div>
         </div>

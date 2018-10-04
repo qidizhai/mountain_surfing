@@ -22,9 +22,9 @@ class Booking extends React.Component {
       status: 'PENDING'
     });
     this.setState({
-      book: "Request has been sent"
-    });
-    this.props.createBooking(booking);
+      book: "request has been sent"
+    })
+    this.props.createBooking(booking).then(()=> this.props.clearBookingErrors());
   }
 
   update(field){
@@ -52,6 +52,7 @@ class Booking extends React.Component {
                 <input type="date" value={this.state.end_date} onChange={this.update("end_date")} />
               </div>
             <br/>
+            <div className="booking-errors">{this.props.errors}</div>
             <button className="book-submit">
               {this.state.book}
             </button>
@@ -65,7 +66,6 @@ class Booking extends React.Component {
             </div>
             <div className="lightbulb">💡</div>
           </div>
-          <div>{status}</div>
         </div>
       </div>
     );
