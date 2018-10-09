@@ -16,11 +16,11 @@
 
  .hero.mod-join.family {
    margin-top: 25px;
-   background-image: url(https://lonelyplanetstatic.imgix.net/copilot/images/ZmFtaWx5LXJvYWQtdHJpcC1sb25lbHktcGxhbmV0LmpwZ01vbiBTZXAgMjQgMjAxOCAwODo1NTo1MSBHTVQrMDAwMCAoVVRDKQ%3D%3D.jpg?q=40&w=2000&h=1125&fit=crop&fm=pjpg);
+   background-image: url(https://lonelyplanetstatic.imgix.net/copilot/images/VFNfdG91cnMmYWN0aXZpdGllcy5qcGdUaHUgT2N0IDA0IDIwMTggMDg6NTU6NTUgR01UKzAwMDAgKFVUQyk%3D.jpg?q=40&w=2000&h=1125&fit=crop&fm=pjpg);
    background-position: center center;
    background-repeat: no-repeat;
    height: 400px;
-   transition: background-image 1s ease-in-out;
+   -webkit-transition: background-image 1.2s ease;
  }
 
  .hero.mod-join.hiker {
@@ -29,7 +29,7 @@
    background-position: center center;
    background-repeat: no-repeat;
    height: 400px;
-   transition: background-image 1s ease-in-out;
+   -webkit-transition: background-image 1.2s ease;
  }
 
  .hero.mod-join.forest {
@@ -38,7 +38,7 @@
    background-position: center center;
    background-repeat: no-repeat;
    height: 400px;
-   transition: background-image 1s ease-in-out;
+   -webkit-transition: background-image 1.2s ease;
  }
 
 .articles {
@@ -52,7 +52,7 @@
   color: white;
   font-family: Benton Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   width: 45%;
-  transition: opacity 1s ease;
+  -webkit-transition: opacity 1.2s ease;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -60,7 +60,7 @@
   opacity: 1;
   font-weight: 600;
   font-size: calc(8px + 2vw);
-  letter-spacing: -0.56px
+  letter-spacing: -0.56px;
 }
 
 .read-more {
