@@ -19,14 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     store = configureStore();
   }
-  window.dispatch = store.dispatch;
-  window.getState = store.getState;
-  window.fetchHouses = fetchHouses;
-  const bounds = {
-  "northEast": {"lat": "2", "lng": "-2" },
-  "southWest": {"lat": "1", "lng": "-3" }};
-
-  //dispatch(fetchHouses(bounds)).then(console.log); //tested
+  // window.dispatch = store.dispatch;
+  // window.getState = store.getState;
+  // window.fetchHouses = fetchHouses;
+  // const bounds = {
+  // "northEast": {"lat": "2", "lng": "-2" },
+  // "southWest": {"lat": "1", "lng": "-3" }};
 
   const root = document.getElementById('root');
   ReactDOM.render(<Root store={store} />, root);

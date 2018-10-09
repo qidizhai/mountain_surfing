@@ -13,7 +13,7 @@ export const receiveHouses = houses => ({
 });
 
 export const clearBookingErrors = () => ({
-  type: CLEAR_BOOKING_ERRORS,  
+  type: CLEAR_BOOKING_ERRORS,
 })
 
 export const receiveHouse = data => ({
@@ -47,7 +47,6 @@ export const createBooking = booking => dispatch => (
 ));
 
 export const fetchHouses = (filters) => dispatch => {
-  // debugger
   return APIUtil.fetchHouses(filters).then(houses => dispatch(receiveHouses(houses)));
 };
 

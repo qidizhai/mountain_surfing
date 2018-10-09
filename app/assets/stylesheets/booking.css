@@ -18,6 +18,11 @@
   text-align: center;
 }
 
+.booking-success {
+  color: green;
+  text-align: center;
+}
+
 .price-booking {
   font-weight: bold;
   font-size: 20px;

@@ -1,6 +1,5 @@
 class MarkerManager {
   constructor(map, handleClick) {
-
     this.map = map;
     this.markers = {};
     this.handleClick = handleClick;
@@ -15,7 +14,6 @@ class MarkerManager {
   }
 
   createMarkerFromHouse(house){
-
     const houseLatlng = new google.maps.LatLng(house.lat, house.lng);
     const marker = new google.maps.Marker({
       position: houseLatlng,

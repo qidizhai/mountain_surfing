@@ -1,6 +1,5 @@
 import merge from 'lodash/merge';
 import { RECEIVE_HOUSE } from '../actions/house_actions';
-
 import { RECEIVE_CURRENT_USER } from '../actions/session_actions';
 
 const usersReducer = (state = {}, action) => {

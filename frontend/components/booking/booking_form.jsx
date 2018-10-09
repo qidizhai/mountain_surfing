@@ -32,6 +32,14 @@ class Booking extends React.Component {
     };
   }
 
+  render_error(){
+    if (this.props.errors[0] === "It is successfully booked"){
+      return (<div className="booking-success">{this.props.errors}</div>);
+    } else {
+      return (<div className="booking-errors">{this.props.errors}</div>);
+    }
+  }
+
   render(){
     let status = "";
     if (this.props.bookingStatus)
@@ -49,7 +57,7 @@ class Booking extends React.Component {
                 <input type="date" value={this.state.end_date} onChange={this.update("end_date")} />
               </div>
             <br/>
-            <div className="booking-errors">{this.props.errors}</div>
+            {this.render_error()}
             <button className="book-submit">
               {this.state.book}
             </button>
