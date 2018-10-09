@@ -22,7 +22,7 @@ class HouseMap extends React.Component {
     } else{
         mapOptions = {
         center: { lat: this.props.lat, lng: this.props.lng }, // this is SF
-        zoom: 5,
+        zoom: 4,
         mapTypeId: 'satellite'
       };
     }

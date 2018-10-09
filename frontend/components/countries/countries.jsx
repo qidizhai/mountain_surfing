@@ -140,8 +140,8 @@ class NewZealand extends React.Component {
       className: "hero mod-join nepal",
       place: "Nepal",
       label: "is a curtain of fluttering prayer flags",
-      lat: 44.8654004,
-      lng: 15.5798232,
+      lat: 27.7090319,
+      lng: 85.2911131,
       video_url: "https://www.youtube.com/embed/zbziahTLPAY",
       intro: "A trekkers\' paradise, Nepal combines Himalayan views, golden temples, charming hill villages and jungle wildlife watching to offer one of the world's great travel destinations."
      }
