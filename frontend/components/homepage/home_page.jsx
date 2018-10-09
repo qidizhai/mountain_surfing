@@ -20,6 +20,10 @@ class HomePage extends React.Component {
     this.intervalId = setTimeout(this.update, 5000);
   }
 
+  componentWillUnmount(){
+    clearInterval(this.intervalId);
+  }
+
   update(){
     if (this.state.className === "hero mod-join hiker"){
         this.setState({

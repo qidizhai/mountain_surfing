@@ -6,7 +6,7 @@ export default (state=[], action) => {
     case RECEIVE_BOOKING_ERROR:
       return action.errors;
     case CLEAR_BOOKING_ERRORS:
-      return [];
+      return ["It is successfully booked"];
     default:
       return state;
   }

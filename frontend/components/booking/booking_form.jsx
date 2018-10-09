@@ -21,9 +21,6 @@ class Booking extends React.Component {
       end_date: this.state.end_date,
       status: 'PENDING'
     });
-    this.setState({
-      book: "request has been sent"
-    })
     this.props.createBooking(booking).then(()=> this.props.clearBookingErrors());
   }
 
@@ -62,7 +59,7 @@ class Booking extends React.Component {
           <div className="bottom-booking">
             <div>
               <p className="view-booking">This home is on people's minds.</p>
-              <p>It's been viewed 500+ times in the pastweek.</p>
+              <p>It's been viewed 500+ times in the past week.</p>
             </div>
             <div className="lightbulb">💡</div>
           </div>
